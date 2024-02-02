@@ -6,215 +6,476 @@
     <title>Alhowail</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- css-start -->
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-
+    <link href="css/jquery.pagepiling.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
     <!-- css-close -->
 </head>
-<body>
-
-    <nav class="navbar navbar-light fixed-top bg--transparent">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" width="40%">
-          </a>
-          <div class="humb-menu">
-            <a href="" class="text-white">EN</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                <a class="navbar-brand" href="index.html">
-                  <img src="images/logo.png" alt="" width="40%">
-                </a>
-              </h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Who We Are
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">About Us</a></li>
-                    <li><a class="dropdown-item" href="#">GM Message</a></li>
-                    <li><a class="dropdown-item" href="#">Board of Directors</a></li>
-                    <li><a class="dropdown-item" href="#">Timeline</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Sectors</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">News & Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Career</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-    <main class="master">
-      <!-- banner -->
-        <div class="section-scroll sec-banner">
-          <div id="carouselExampleDark" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <video onloadedmetadata="this.muted=true" autoplay="" loop="" preload="auto" class="w-100 h-100">
-                  <source src="images/banner/banner1.mp4" type="video/mp4" class="w-100"></video>
-                  <div class="container">
-                  <div class="banner-content">
-                    <h1>Building the future with excellence</h1>
-                    <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <video onloadedmetadata="this.muted=true" autoplay="" loop="" preload="auto" class="w-100">
-                  <source src="images/banner/banner2.mp4" type="video/mp4" class="w-100"></video>
-                  <div class="container">
-                  <div class="banner-content">
-                    <h1>Building the future with excellence</h1>
-                    <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <video onloadedmetadata="this.muted=true" autoplay="" loop="" preload="auto" class="w-100">
-                  <source src="images/banner/banner3.mp4" type="video/mp4" class="w-100"></video>
-                  <div class="container">
-                  <div class="banner-content">
-                    <h1>Building the future with excellence</h1>
-                    <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <span class="scroll-btn">
-            <a href="#">
-              <span class="mouse">
-                <span>
-                </span>
-              </span>
+    <body class="theme-yellow homepage dark-horizontal">
+      <div class="wrapper">
+        <!-- header-start -->
+        <nav class="navbar navbar-light fixed-top bg--transparent">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="" width="40%">
             </a>
-            <p>scroll Down</p>
-          </span>
-        </div>
-        <!-- close -->
-
-        <!-- about start -->
-        <div class="section-scroll about-sec">
-           <div class="container">
-            <div class="d-lg-flex d-md-block gap-5">
-              <div class="content-main w-100">
-                <h1><span>Investing in</span><br>your success</h1>
-                <p>
-                 Al Howail Group operates in a range of industries such as construction, engineering, trading, manufacturing, and real estate. The company was established in 1969 and has since grown into a diversified conglomerate with a wide range of activities. Al Howail Group has completed several notable projects in Saudi Arabia, including the construction of the King Faisal Specialist Hospital in Riyadh and the expansion of the Jeddah Islamic Port. The company is also involved in real estate development, and it has developed several residential and commercial properties in Riyadh and other parts of Saudi Arabia.
-                </p>
-               </div>
-               <div class="bx-main d-flex flex-wrap w-100">
-                  <div class="col-6">
-                    <a href="#">
-                    <div class="card m-3">
-                        <div class="card-body image-card d-flex justify-content-between flex-column ">
-                          <img src="images/about/service1.jpg" alt="">
-                          <span><svg xmlns="http://www.w3.org/2000/svg" id="fi_11481822" width="50px" data-name="Layer 1" viewBox="0 0 512 512"><path d="M416.36,294.67A15.81,15.81,0,0,0,432.13,281a179.89,179.89,0,0,0,0-49.92,15.81,15.81,0,0,0-15.77-13.71H398.9a146.91,146.91,0,0,0-14.53-35L396.72,170a15.82,15.82,0,0,0,1.46-20.85,178.88,178.88,0,0,0-35.3-35.3A15.81,15.81,0,0,0,342,115.28l-12.35,12.35a146.47,146.47,0,0,0-35-14.52V95.64A15.81,15.81,0,0,0,281,79.87a180.66,180.66,0,0,0-49.92,0,15.81,15.81,0,0,0-13.71,15.77v17.47a146.64,146.64,0,0,0-35,14.52L170,115.28a15.82,15.82,0,0,0-20.85-1.46,178.88,178.88,0,0,0-35.3,35.3A15.81,15.81,0,0,0,115.28,170l12.35,12.35a146.91,146.91,0,0,0-14.53,35H95.64A15.81,15.81,0,0,0,79.87,231a179.89,179.89,0,0,0,0,49.92,15.81,15.81,0,0,0,15.77,13.71H113.1a146.91,146.91,0,0,0,14.53,35L115.28,342a15.82,15.82,0,0,0-1.46,20.85,178.88,178.88,0,0,0,35.3,35.3A15.82,15.82,0,0,0,170,396.72l12.34-12.35a146.88,146.88,0,0,0,35,14.52v17.47A15.81,15.81,0,0,0,231,432.13a179.89,179.89,0,0,0,49.92,0,15.81,15.81,0,0,0,13.71-15.77V398.89a146.47,146.47,0,0,0,35-14.52L342,396.72a15.82,15.82,0,0,0,20.85,1.46,178.61,178.61,0,0,0,35.3-35.3A15.81,15.81,0,0,0,396.72,342l-12.35-12.35a146.88,146.88,0,0,0,14.52-35Zm-31.54-9.75a131.08,131.08,0,0,1-17.29,41.71,8,8,0,0,0,1.09,9.94l16.74,16.74a162.52,162.52,0,0,1-32.06,32.05l-16.73-16.73a8,8,0,0,0-9.94-1.1,130.89,130.89,0,0,1-41.71,17.29,8,8,0,0,0-6.25,7.81V416.3a164.33,164.33,0,0,1-45.34,0V392.63a8,8,0,0,0-6.25-7.81,131.08,131.08,0,0,1-41.71-17.29,8,8,0,0,0-9.94,1.09l-16.74,16.74a162.52,162.52,0,0,1-32-32.06l16.73-16.73a8,8,0,0,0,1.1-9.94,130.89,130.89,0,0,1-17.29-41.71,8,8,0,0,0-7.81-6.25H95.7a163.94,163.94,0,0,1,0-45.34h23.66a8,8,0,0,0,7.81-6.25,131,131,0,0,1,17.29-41.71,8,8,0,0,0-1.1-9.94l-16.73-16.74a162.52,162.52,0,0,1,32.06-32l16.73,16.74a8,8,0,0,0,9.94,1.09,131.08,131.08,0,0,1,41.71-17.29,8,8,0,0,0,6.25-7.81V95.7a164.33,164.33,0,0,1,45.34,0v23.66a8,8,0,0,0,6.25,7.81,131.08,131.08,0,0,1,41.71,17.29,8,8,0,0,0,9.94-1.09l16.74-16.74a162.52,162.52,0,0,1,32.05,32.06l-16.73,16.73a8,8,0,0,0-1.1,9.94,130.89,130.89,0,0,1,17.29,41.71,8,8,0,0,0,7.81,6.25H416.3a163.94,163.94,0,0,1,0,45.34H392.63A8,8,0,0,0,384.82,284.92ZM256,161.49A94.51,94.51,0,1,0,350.51,256,94.62,94.62,0,0,0,256,161.49Zm0,173A78.51,78.51,0,1,1,334.51,256,78.6,78.6,0,0,1,256,334.51ZM85.22,98.92A231,231,0,0,0,63.3,126.73,8,8,0,1,1,50,117.81,247.52,247.52,0,0,1,73.46,88.08,8,8,0,0,1,85.22,98.92Zm27.35-35.5a8,8,0,0,1,2-11.13,248.05,248.05,0,0,1,290.29,5.34l-2.69-7.46a8,8,0,0,1,15.05-5.43l12.91,35.77a8,8,0,0,1-7.53,10.72,7.47,7.47,0,0,1-1.41-.13l-37.43-6.71a8,8,0,1,1,2.82-15.75l8.28,1.49a232.09,232.09,0,0,0-271.17-4.7A8,8,0,0,1,112.57,63.42ZM30.83,312A8,8,0,0,1,25,321.67a7.65,7.65,0,0,1-1.94.25,8,8,0,0,1-7.76-6.07,248.51,248.51,0,0,1-5.69-31.19A8,8,0,0,1,25.5,282.8,231.65,231.65,0,0,0,30.83,312ZM8.06,248.86a247.42,247.42,0,0,1,2.68-29.74,8,8,0,1,1,15.82,2.4,231.71,231.71,0,0,0-2.51,27.81,8,8,0,0,1-8,7.76h-.24A8,8,0,0,1,8.06,248.86Zm36.63-88.65A232.57,232.57,0,0,0,34.2,188a8,8,0,0,1-15.3-4.68,248.84,248.84,0,0,1,11.21-29.72,8,8,0,1,1,14.58,6.59ZM481.17,200a8,8,0,0,1,15.53-3.87,248.84,248.84,0,0,1,5.69,31.19,8,8,0,0,1-7,8.87,7.42,7.42,0,0,1-.94.06,8,8,0,0,1-7.93-7.07A230.2,230.2,0,0,0,481.17,200Zm22.77,63.12a247.42,247.42,0,0,1-2.68,29.74,8,8,0,0,1-7.9,6.8,8.31,8.31,0,0,1-1.21-.09,8,8,0,0,1-6.71-9.11A231.71,231.71,0,0,0,488,262.67a8,8,0,0,1,16,.47ZM462,394.19a247.52,247.52,0,0,1-23.45,29.73,8,8,0,1,1-11.76-10.84,231,231,0,0,0,21.92-27.81A8,8,0,1,1,462,394.19Zm31.11-65.53a248.84,248.84,0,0,1-11.21,29.72,8,8,0,1,1-14.58-6.59A232.57,232.57,0,0,0,477.8,324a8,8,0,0,1,15.3,4.68ZM399.43,448.58a8,8,0,0,1-2,11.13,248.09,248.09,0,0,1-290.29-5.33l2.69,7.45a8,8,0,0,1-15,5.43L81.85,431.49a8,8,0,0,1,8.94-10.59l37.43,6.71a8,8,0,1,1-2.82,15.75l-8.28-1.48a232.12,232.12,0,0,0,271.17,4.69A8,8,0,0,1,399.43,448.58Z"></path></svg></span>
-                          <div class="action-btn">
-                                <a href="">Services</a>
-                          </div>
-                      </div>
-                    </div>
-                  </a>
-                  </div>
-                  <div class="col-6">
-                    <a href="#">
-                    <div class="card m-3">
-                        <div class="card-body image-card d-flex justify-content-between flex-column ">
-                          <img src="images/about/service1.jpg" alt="">
-                          <span><svg viewBox="0 0 60 60" width="50px" xmlns="http://www.w3.org/2000/svg" id="fi_4256823"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="041---Trade-Agreement" fill="rgb(0,0,0)" fill-rule="nonzero" transform="translate(-1)"><path id="Shape" d="m6.275 11.471c.63902897.5317844 1.5175585.6718918 2.29029836.3652556s1.31616872-1.0110006 1.41670164-1.8362556h27.018c1.6568542 0 3-1.34314575 3-3v-2c0-1.65685425-1.3431458-3-3-3h-27.018c-.10045161-.82505347-.64358807-1.52932533-1.41603302-1.83613563-.77244494-.3068103-1.65078927-.1671417-2.28996698.36413563l-4.468 3.721c-.51479061.4383295-.81063931 1.08096502-.80890567 1.75708566.00173364.67612063.300874 1.31723054.81790567 1.75291434zm-3.175-5.693 4.457-3.714c.0463924-.04033484.10553332-.06299962.167-.064.04107372.00094668.08153959.01012801.119.027.09817199.04109306.1606805.1386382.157.245v.728c0 .55228475.44771525 1 1 1h28c.5522847 0 1 .44771525 1 1v2c0 .55228475-.4477153 1-1 1h-28c-.55228475 0-1 .44771525-1 1v.728c.00400926.1058727-.05761315.20327586-.155.245-.09465812.0458643-.20753958.0309183-.287-.038l-4.451-3.706c-.06765268-.05684916-.10680073-.14063331-.107-.229-.00058068-.08503049.03593271-.16609022.1-.222z"></path><path id="Shape" d="m55.725 10.529c-.639029-.53178436-1.5175585-.67189181-2.2902984-.3652556-.7727398.3066362-1.3161687 1.0110006-1.4167016 1.8362556h-27.018c-1.6568542 0-3 1.3431458-3 3v2c0 1.6568542 1.3431458 3 3 3h27.018c.0972716.8269145.6401981 1.5338782 1.4140091 1.8412311.7738111.3073529 1.6538496.165582 2.2919909-.3692311l4.468-3.721c.5147906-.4383295.8106393-1.080965.8089057-1.7570857-.0017337-.6761206-.300874-1.3172305-.8179057-1.7529143zm3.175 5.693-4.459 3.714c-.0803774.0668449-.192203.0810679-.2867545.0364722s-.1547026-.1399325-.1542455-.2444722v-.728c0-.5522847-.4477153-1-1-1h-28c-.5522847 0-1-.4477153-1-1v-2c0-.5522847.4477153-1 1-1h28c.5522847 0 1-.4477153 1-1v-.728c-.0040093-.1058727.0576131-.2032759.155-.245.0944764-.0469739.2080038-.0319424.287.038l4.449 3.706c.0683992.056467.1083054.1403068.109.229.0005807.0850305-.0359327.1660902-.1.222z"></path><path id="Shape" d="m59 27-5.215.008c-1.2344084-.0036706-2.3230624.8079307-2.672 1.992h-3.173c-.462531.0016787-.9189194-.1059084-1.332-.314l-5.377-2.694c-2.6686941-1.3200086-5.8003059-1.3200086-8.469 0l-.263.132-.268-.136c-2.6689461-1.3189302-5.8000539-1.3189302-8.469 0l-5.375 2.693c-.4110034.20945-.8657051.3187566-1.327.319h-6.173c-.3487301-1.1833567-1.43633148-1.9947806-2.67-1.992l-5.217-.008c-1.1045695 0-2 .8954305-2 2v16c0 1.1045695.8954305 2 2 2l5.019.008 3 1.25c-.0462518 1.3101403.6182742 2.5432222 1.738 3.225.550245.3297209 1.1795291.5042341 1.821.505.3036919-.0005503.6060937-.0395266.9-.116.026-.007.05-.02.076-.028.2153683.9600838.8130897 1.790754 1.655 2.3.5503558.3280264 1.1793033.5008142 1.82.5.3036919-.0005503.6060937-.0395266.9-.116.026-.007.049-.02.075-.027.2172561.9611945.8175952 1.7919887 1.662 2.3.8150289.4908119 1.7939197.6311171 2.714.389.023-.006.044-.018.067-.024.2111237.9462179.8000444 1.764926 1.63 2.266l.014.008.028.018c.5483305.3299168 1.1760694.5044807 1.816.505.3036687.0000786.6061079-.0385664.9-.115.6587805-.1706838 1.2540702-.5284133 1.714-1.03l.583.453c.6129233.4733928 1.3655481.7301293 2.14.73.1608953-.0001056.3215979-.011131.481-.033.904913-.1191186 1.7267021-.5892768 2.288-1.309.016-.018.032-.038.046-.057.5778535-.7647658.8229962-1.7301954.68-2.678l.044-.005c.9283614-.1177614 1.7697303-.6057049 2.333-1.353.4760477-.6172488.7347937-1.3745027.736-2.154.2269426.0136025.4546689.0052302.68-.025.9265459-.118359 1.7660238-.6058908 2.328-1.352.481187-.6198531.7422545-1.3822971.742-2.167.0006438-.3996908-.0649097-.7967291-.194-1.175.4919556-.1271369.9487192-.3640659 1.336-.693l9 .008h.006l5.222-.008c1.1045695 0 2-.8954305 2-2v-16c0-1.1045695-.8954305-2-2-2zm-18.657.784 5.365 2.688c.6925556.3478952 1.456975.5287256 2.232.528h3.166l1.557 14.006-6.741-.006c.071149-.3231877.0973962-.6546422.078-.985-.11418-1.1902716-.7331139-2.2744982-1.7-2.978l-10.1-7.064c-1.2769329-.9146154-3.0438578-.6852864-4.045.525l-4.644 5.554c-.8617413 1.0231202-2.3823914 1.1718119-3.426.335-.2369814-.1884755-.3744523-.4752112-.373-.778-.0000883-.2075583.0661302-.4097174.189-.577l4.611-6.589c.7638359-1.0906834 1.7873095-1.9739364 2.978-2.57l4.163-2.086c2.1076281-1.0422215 4.5804378-1.0433306 6.689-.003zm-37.343 1.216 5.217.008c.22588466.0000308.44106389.0962702.59166589.2646237.15060199.1683536.22236919.3928833.19733411.6173763l-1.681 15.117-4.325-.007zm10.784 20.767c-.7605667-.4652397-1.0112911-1.452162-.565-2.224l.442-.755c.2097743-.3664064.5583658-.6328067.967-.739.128803-.0325569.2611461-.0490158.394-.049.2819041.0007806.5583423.0778378.8.223.48991.2951669.7864443.828091.779 1.4.0012253.2875547-.0732711.5703649-.216.82l-.442.754c-.2098032.3667857-.5582705.6338119-.967.741-.4041671.1055213-.8337977.0438881-1.192-.171zm4.452 2.661c-.7602076-.4655707-1.0104696-1.4524194-.564-2.224l.443-.757c.2100345-.3653596.5581355-.6309398.966-.737.1287045-.0333026.2610579-.0504347.394-.051.2819109.0007308.5583622.0777916.8.223.7446411.4610865.9974322 1.4247698.575 2.192v.006l-.453.78-.006.012c-.2101919.3604078-.5556741.6218924-.9596199.7263061-.4039457.1044136-.8328663.0431001-1.1913801-.1703061zm4.464 2.656c-.7604052-.4568402-1.0170331-1.4371765-.578-2.208l.008-.011.442-.757c.007-.011.012-.024.018-.036.2105442-.3549418.5537054-.6114857.9537172-.7129897.4000119-.1015039.8239749-.0396196 1.1782828.1719897.7639491.4592601 1.0192592 1.4458068.574 2.218l-.454.78c-.2086204.3596339-.552571.6207466-.9550437.7250288-.4024726.1042821-.8299445.0430477-1.1869563-.1700288zm5.639 2.827c-.4023506.1066126-.8307472.0452584-1.187-.17l-.014-.009c-.7552071-.454086-1.0081653-1.4290199-.569-2.193l.281-.484.179-.308c.2794378-.4786642.7917398-.7732569 1.346-.774.2858572.0011491.5660829.0795846.811.227.7576049.4557286 1.0103002 1.4344777.568 2.2l-.462.794c-.2098878.358133-.5552216.6165926-.958.717zm13.126-12.472c-.4354765-.3399312-1.0640687-.2624765-1.404.173-.3399312.4354765-.2624765 1.0640687.173 1.404l.792.62c.3272906.2518848.5403594.6241103.5918163 1.0338874s-.062965.8231266-.3178163 1.1481126c-.2417968.3228064-.6034026.5346388-1.0032207.587697-.399818.0530582-.8041577-.0571288-1.1217793-.305697l-.657-.512c-.0085039-.0076155-.0175255-.0146323-.027-.021-.4366218-.3308601-1.0581734-.2488299-1.3940092.1839764s-.2609249 1.0552561.1680092 1.3960236l.017.013c.6761477.5335882.7969906 1.5119253.271 2.194-.2425662.3195266-.6030168.5285745-1.0008181.5804371s-.7998008-.0577822-1.1161819-.3044371c-.3022276-.233801-.7112692-.274938-1.054-.106-.312532.1525367-.5241154.4556735-.5595257.8016356-.0354102.3459622.1103755.6856767.3855257.8983644.6501931.5202856.7857367 1.4555362.31 2.139l-.036.045c-.2410164.3211326-.6017276.5310666-1 .582-.4016062.0547672-.8084444-.0532429-1.13-.3l-.743-.577c.7897978-1.6794368.1811792-3.6841203-1.409-4.641-.8143426-.4916457-1.7931438-.6323506-2.713-.39-.027.007-.05.021-.077.028-.2170394-.9612923-.8174343-1.7921637-1.662-2.3-.8147979-.4904279-1.7932242-.6307183-2.713-.389-.026.007-.049.02-.074.027-.2111429-.9442465-.7964112-1.762397-1.621854-2.2672008s-1.8203968-.6530464-2.757146-.4107992c-.026.007-.049.021-.075.028-.2158003-.9598897-.813411-1.790406-1.655-2.3-.8193836-.489351-1.8008002-.6296239-2.7244605-.3894045-.9236604.2402193-1.7123855.8408588-2.1895395 1.6674045l-.325.556-2.313-.958 1.594-14.374h6.166c.7734333.0010324 1.5363992-.1787509 2.228-.525l5.363-2.688c1.6994658-.8351043 3.6505177-1.0017663 5.467-.467l-1.525.765c-1.4889677.7451004-2.7683273 1.8501894-3.722 3.215l-4.605 6.581c-.9223639 1.2923791-.6728867 3.0804451.568 4.071 1.8955496 1.5141724 4.6528671 1.2399052 6.213-.618l4.64-5.549c.3359657-.4085633.9319955-.4848201 1.36-.174l10.068 7.037c.4966124.3596675.8180624.9124888.885 1.522.0428146.4395113-.1046086.8763208-.405 1.2-.5911899.5564121-1.5040381.5859832-2.13.069zm17.535-.439-4.324.007-1.676-15.117c-.0250744-.2248398.0469537-.4496989.1980004-.6181227.1510467-.1684237.3667666-.2644164.5929996-.2638773l5.209-.008z"></path></g></g></svg></span>
-                          <div class="action-btn">
-                                <a href="">Trading</a>
-                          </div>
-                      </div>
-                    </div>
-                  </a>
-                  </div>
-                  <div class="col-6">
-                    <a href="#">
-                    <div class="card m-3">
-                        <div class="card-body image-card d-flex justify-content-between flex-column ">
-                          <img src="images/about/service1.jpg" alt="">
-                          <span><svg id="fi_10506751" enable-background="new 0 0 512 512" width="50px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m494.5 417.369h-2.501v-113.774c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v77.748h-35.497v-44.904c0-8.34-6.785-15.125-15.125-15.125h-41.964c-8.34 0-15.124 6.785-15.124 15.125v44.904h-334.288v-199.894l95.771 45.439c4.342 2.059 9.36 1.756 13.425-.813 4.062-2.569 6.488-6.973 6.488-11.78v-32.846l95.771 45.439c4.342 2.059 9.36 1.756 13.425-.813 4.062-2.569 6.488-6.973 6.488-11.78v-32.67l111.396 54.667c6.192 3.039 13.112 4.646 20.011 4.646h73.143c3.354 0 6.081 2.728 6.081 6.081v21.574c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-21.574c0-11.624-9.457-21.081-21.081-21.081h-21.689l-9.204-171.294c-.447-8.333-7.334-14.86-15.679-14.86h-71.09c-8.345 0-15.231 6.527-15.679 14.859l-7.601 141.49-58.531-28.724c-4.347-2.134-9.399-1.879-13.512.683-4.111 2.562-6.566 6.984-6.566 11.829v32.696l-95.771-45.439c-4.343-2.061-9.36-1.757-13.424.812-4.062 2.569-6.488 6.973-6.488 11.78v32.847l-95.771-45.439c-4.344-2.061-9.362-1.757-13.424.812-4.063 2.569-6.489 6.973-6.489 11.78v237.599h-2.501c-9.649 0-17.5 7.851-17.5 17.5v19.849c0 9.649 7.851 17.5 17.5 17.5h38.647c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-38.647c-1.378 0-2.5-1.122-2.5-2.5v-19.849c0-1.378 1.122-2.5 2.5-2.5h477c1.379 0 2.5 1.122 2.5 2.5v19.849c0 1.378-1.121 2.5-2.5 2.5h-403.349c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h403.349c9.649 0 17.5-7.851 17.5-17.5v-19.849c0-9.65-7.851-17.5-17.5-17.5zm-141.942-361.923c.02-.373.327-.664.7-.664h71.09c.373 0 .681.292.7.664l1.766 32.871h-76.021zm-2.572 47.871h77.635l6.588 122.62h-36.434c-4.62 0-9.255-1.076-13.402-3.111l-39.758-19.511zm127.013 293.026v21.026h-35.497v-21.026zm-441.998 0h334.287v21.026h-334.287zm349.288 21.026v-80.93c0-.069.056-.125.124-.125h41.964c.069 0 .125.056.125.125v80.93z"></path><path d="m86.01 262.977c-7.134 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.99c7.134 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.865v-47.122h20.865z"></path><path d="m155.862 262.977c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.866v-47.122h20.866z"></path><path d="m250.702 262.977h-24.989c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm-2.062 62.121h-20.866v-47.122h20.866z"></path><path d="m295.564 262.977c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.866v-47.122h20.866z"></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
-                          <div class="action-btn">
-                                <a href="">Manufacturing </a>
-                          </div>
-                      </div>
-                    </div>
-                  </a>
-                  </div>
-                  <div class="col-6">
-                    <a href="#">
-                    <div class="card m-3">
-                        <div class="card-body image-card d-flex justify-content-between flex-column ">
-                          <img src="images/about/service1.jpg" alt="">
-                          <span><svg id="fi_10506751" enable-background="new 0 0 512 512" width="50px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m494.5 417.369h-2.501v-113.774c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v77.748h-35.497v-44.904c0-8.34-6.785-15.125-15.125-15.125h-41.964c-8.34 0-15.124 6.785-15.124 15.125v44.904h-334.288v-199.894l95.771 45.439c4.342 2.059 9.36 1.756 13.425-.813 4.062-2.569 6.488-6.973 6.488-11.78v-32.846l95.771 45.439c4.342 2.059 9.36 1.756 13.425-.813 4.062-2.569 6.488-6.973 6.488-11.78v-32.67l111.396 54.667c6.192 3.039 13.112 4.646 20.011 4.646h73.143c3.354 0 6.081 2.728 6.081 6.081v21.574c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-21.574c0-11.624-9.457-21.081-21.081-21.081h-21.689l-9.204-171.294c-.447-8.333-7.334-14.86-15.679-14.86h-71.09c-8.345 0-15.231 6.527-15.679 14.859l-7.601 141.49-58.531-28.724c-4.347-2.134-9.399-1.879-13.512.683-4.111 2.562-6.566 6.984-6.566 11.829v32.696l-95.771-45.439c-4.343-2.061-9.36-1.757-13.424.812-4.062 2.569-6.488 6.973-6.488 11.78v32.847l-95.771-45.439c-4.344-2.061-9.362-1.757-13.424.812-4.063 2.569-6.489 6.973-6.489 11.78v237.599h-2.501c-9.649 0-17.5 7.851-17.5 17.5v19.849c0 9.649 7.851 17.5 17.5 17.5h38.647c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-38.647c-1.378 0-2.5-1.122-2.5-2.5v-19.849c0-1.378 1.122-2.5 2.5-2.5h477c1.379 0 2.5 1.122 2.5 2.5v19.849c0 1.378-1.121 2.5-2.5 2.5h-403.349c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h403.349c9.649 0 17.5-7.851 17.5-17.5v-19.849c0-9.65-7.851-17.5-17.5-17.5zm-141.942-361.923c.02-.373.327-.664.7-.664h71.09c.373 0 .681.292.7.664l1.766 32.871h-76.021zm-2.572 47.871h77.635l6.588 122.62h-36.434c-4.62 0-9.255-1.076-13.402-3.111l-39.758-19.511zm127.013 293.026v21.026h-35.497v-21.026zm-441.998 0h334.287v21.026h-334.287zm349.288 21.026v-80.93c0-.069.056-.125.124-.125h41.964c.069 0 .125.056.125.125v80.93z"></path><path d="m86.01 262.977c-7.134 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.99c7.134 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.865v-47.122h20.865z"></path><path d="m155.862 262.977c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.866v-47.122h20.866z"></path><path d="m250.702 262.977h-24.989c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm-2.062 62.121h-20.866v-47.122h20.866z"></path><path d="m295.564 262.977c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.866v-47.122h20.866z"></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
-                          <div class="action-btn">
-                                <a href="">Real Estate & Contracting </a>
-                          </div>
-                      </div>
-                    </div>
-                  </a>
-                  </div>
-               </div>
+            <div class="humb-menu">
+              <a href="" class="text-white">EN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
-           </div>
-        </div>
-        <!-- close -->
-
-        <div class="section-scroll">
-            <h1>Animejs plugins</h1>
-        </div>
-    </main>
-
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="" width="40%">
+                  </a>
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Who We Are
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li><a class="dropdown-item" href="#">GM Message</a></li>
+                      <li><a class="dropdown-item" href="#">Board of Directors</a></li>
+                      <li><a class="dropdown-item" href="#">Timeline</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Sectors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">News & Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Career</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- header-close -->
     
-
+        <div class="home-piling pagepiling a-pagepiling full-height">
+          <!--Section 1-->
+          <div class="section pp-scrollable slide slide1">
+            <div class="">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <video onloadedmetadata="this.muted=true" autoplay="" loop="" preload="auto" class="w-100 h-100">
+                      <source src="images/banner/banner1.mp4" type="video/mp4" class="w-100">
+                    </video>
+                    <div class="container">
+                      <div class="banner-content loadtxt3">
+                        <h1>Building the future with excellence</h1>
+                        <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of
+                          activities.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video onloadedmetadata="this.muted=true" autoplay="" loop="" preload="auto" class="w-100">
+                      <source src="images/banner/banner2.mp4" type="video/mp4" class="w-100">
+                    </video>
+                    <div class="container">
+                      <div class="banner-content loadtxt3">
+                        <h1>Building the future with excellence</h1>
+                        <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of
+                          activities.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video onloadedmetadata="this.muted=true" autoplay="" loop="" preload="auto" class="w-100">
+                      <source src="images/banner/banner3.mp4" type="video/mp4" class="w-100">
+                    </video>
+                    <div class="container">
+                      <div class="banner-content loadtxt3">
+                        <h1>Building the future with excellence</h1>
+                        <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of
+                          activities.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <span class="scroll-btn">
+                <a href="#">
+                  <span class="mouse">
+                    <span>
+                    </span>
+                  </span>
+                </a>
+                <p>scroll Down</p>
+              </span>
+            </div>
+          </div>
+          <!-- close -->
+          <!--Section 2-->
+          <div class="section pp-scrollable slide slide2 about-sec">
+            <div class="slide-container">
+              <div class="container">
+                <div class="d-lg-flex d-md-block gap-5">
+                  <div class="content-main w-100 loadtxt2">
+                    <h1><span>Investing in</span><br>your success</h1>
+                    <p>
+                      Al Howail Group operates in a range of industries such as construction, engineering, trading,
+                      manufacturing, and real estate. The company was established in 1969 and has since grown into a
+                      diversified conglomerate with a wide range of activities. Al Howail Group has completed several
+                      notable projects in Saudi Arabia, including the construction of the King Faisal Specialist Hospital in
+                      Riyadh and the expansion of the Jeddah Islamic Port. The company is also involved in real estate
+                      development, and it has developed several residential and commercial properties in Riyadh and other
+                      parts of Saudi Arabia.
+                    </p>
+                    <div class="counter-main">
+                      <div class="counter-container">
+                        <!-- <img src="images/about/company.png" alt=""> -->
+                        <lottie-player src="images/about/building.json" loop autoplay style="width: 60px;"></lottie-player>
+                        <div class="counter" data-target="55"></div>
+                      </div>
+                      <span>Years of Experience</span>
+                    </div>
+                  </div>
+                  <div class="bx-main d-flex flex-wrap w-100 loadtxt3">
+                    <div class="col-6">
+                      <a href="#" class="service-card">
+                        <div class="card card-abt m-3">
+                          <div class="card-body image-card d-flex justify-content-between flex-column ">
+                            <img src="images/services/1.jpg" alt="">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" id="fi_11481822" width="50px" data-name="Layer 1"
+                                viewBox="0 0 512 512">
+                                <path
+                                  d="M416.36,294.67A15.81,15.81,0,0,0,432.13,281a179.89,179.89,0,0,0,0-49.92,15.81,15.81,0,0,0-15.77-13.71H398.9a146.91,146.91,0,0,0-14.53-35L396.72,170a15.82,15.82,0,0,0,1.46-20.85,178.88,178.88,0,0,0-35.3-35.3A15.81,15.81,0,0,0,342,115.28l-12.35,12.35a146.47,146.47,0,0,0-35-14.52V95.64A15.81,15.81,0,0,0,281,79.87a180.66,180.66,0,0,0-49.92,0,15.81,15.81,0,0,0-13.71,15.77v17.47a146.64,146.64,0,0,0-35,14.52L170,115.28a15.82,15.82,0,0,0-20.85-1.46,178.88,178.88,0,0,0-35.3,35.3A15.81,15.81,0,0,0,115.28,170l12.35,12.35a146.91,146.91,0,0,0-14.53,35H95.64A15.81,15.81,0,0,0,79.87,231a179.89,179.89,0,0,0,0,49.92,15.81,15.81,0,0,0,15.77,13.71H113.1a146.91,146.91,0,0,0,14.53,35L115.28,342a15.82,15.82,0,0,0-1.46,20.85,178.88,178.88,0,0,0,35.3,35.3A15.82,15.82,0,0,0,170,396.72l12.34-12.35a146.88,146.88,0,0,0,35,14.52v17.47A15.81,15.81,0,0,0,231,432.13a179.89,179.89,0,0,0,49.92,0,15.81,15.81,0,0,0,13.71-15.77V398.89a146.47,146.47,0,0,0,35-14.52L342,396.72a15.82,15.82,0,0,0,20.85,1.46,178.61,178.61,0,0,0,35.3-35.3A15.81,15.81,0,0,0,396.72,342l-12.35-12.35a146.88,146.88,0,0,0,14.52-35Zm-31.54-9.75a131.08,131.08,0,0,1-17.29,41.71,8,8,0,0,0,1.09,9.94l16.74,16.74a162.52,162.52,0,0,1-32.06,32.05l-16.73-16.73a8,8,0,0,0-9.94-1.1,130.89,130.89,0,0,1-41.71,17.29,8,8,0,0,0-6.25,7.81V416.3a164.33,164.33,0,0,1-45.34,0V392.63a8,8,0,0,0-6.25-7.81,131.08,131.08,0,0,1-41.71-17.29,8,8,0,0,0-9.94,1.09l-16.74,16.74a162.52,162.52,0,0,1-32-32.06l16.73-16.73a8,8,0,0,0,1.1-9.94,130.89,130.89,0,0,1-17.29-41.71,8,8,0,0,0-7.81-6.25H95.7a163.94,163.94,0,0,1,0-45.34h23.66a8,8,0,0,0,7.81-6.25,131,131,0,0,1,17.29-41.71,8,8,0,0,0-1.1-9.94l-16.73-16.74a162.52,162.52,0,0,1,32.06-32l16.73,16.74a8,8,0,0,0,9.94,1.09,131.08,131.08,0,0,1,41.71-17.29,8,8,0,0,0,6.25-7.81V95.7a164.33,164.33,0,0,1,45.34,0v23.66a8,8,0,0,0,6.25,7.81,131.08,131.08,0,0,1,41.71,17.29,8,8,0,0,0,9.94-1.09l16.74-16.74a162.52,162.52,0,0,1,32.05,32.06l-16.73,16.73a8,8,0,0,0-1.1,9.94,130.89,130.89,0,0,1,17.29,41.71,8,8,0,0,0,7.81,6.25H416.3a163.94,163.94,0,0,1,0,45.34H392.63A8,8,0,0,0,384.82,284.92ZM256,161.49A94.51,94.51,0,1,0,350.51,256,94.62,94.62,0,0,0,256,161.49Zm0,173A78.51,78.51,0,1,1,334.51,256,78.6,78.6,0,0,1,256,334.51ZM85.22,98.92A231,231,0,0,0,63.3,126.73,8,8,0,1,1,50,117.81,247.52,247.52,0,0,1,73.46,88.08,8,8,0,0,1,85.22,98.92Zm27.35-35.5a8,8,0,0,1,2-11.13,248.05,248.05,0,0,1,290.29,5.34l-2.69-7.46a8,8,0,0,1,15.05-5.43l12.91,35.77a8,8,0,0,1-7.53,10.72,7.47,7.47,0,0,1-1.41-.13l-37.43-6.71a8,8,0,1,1,2.82-15.75l8.28,1.49a232.09,232.09,0,0,0-271.17-4.7A8,8,0,0,1,112.57,63.42ZM30.83,312A8,8,0,0,1,25,321.67a7.65,7.65,0,0,1-1.94.25,8,8,0,0,1-7.76-6.07,248.51,248.51,0,0,1-5.69-31.19A8,8,0,0,1,25.5,282.8,231.65,231.65,0,0,0,30.83,312ZM8.06,248.86a247.42,247.42,0,0,1,2.68-29.74,8,8,0,1,1,15.82,2.4,231.71,231.71,0,0,0-2.51,27.81,8,8,0,0,1-8,7.76h-.24A8,8,0,0,1,8.06,248.86Zm36.63-88.65A232.57,232.57,0,0,0,34.2,188a8,8,0,0,1-15.3-4.68,248.84,248.84,0,0,1,11.21-29.72,8,8,0,1,1,14.58,6.59ZM481.17,200a8,8,0,0,1,15.53-3.87,248.84,248.84,0,0,1,5.69,31.19,8,8,0,0,1-7,8.87,7.42,7.42,0,0,1-.94.06,8,8,0,0,1-7.93-7.07A230.2,230.2,0,0,0,481.17,200Zm22.77,63.12a247.42,247.42,0,0,1-2.68,29.74,8,8,0,0,1-7.9,6.8,8.31,8.31,0,0,1-1.21-.09,8,8,0,0,1-6.71-9.11A231.71,231.71,0,0,0,488,262.67a8,8,0,0,1,16,.47ZM462,394.19a247.52,247.52,0,0,1-23.45,29.73,8,8,0,1,1-11.76-10.84,231,231,0,0,0,21.92-27.81A8,8,0,1,1,462,394.19Zm31.11-65.53a248.84,248.84,0,0,1-11.21,29.72,8,8,0,1,1-14.58-6.59A232.57,232.57,0,0,0,477.8,324a8,8,0,0,1,15.3,4.68ZM399.43,448.58a8,8,0,0,1-2,11.13,248.09,248.09,0,0,1-290.29-5.33l2.69,7.45a8,8,0,0,1-15,5.43L81.85,431.49a8,8,0,0,1,8.94-10.59l37.43,6.71a8,8,0,1,1-2.82,15.75l-8.28-1.48a232.12,232.12,0,0,0,271.17,4.69A8,8,0,0,1,399.43,448.58Z">
+                                </path>
+                              </svg></span>
+                            <div class="action-btn">
+                              <a href="">Services</a>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="#" class="service-card">
+                        <div class="card card-abt m-3">
+                          <div class="card-body image-card d-flex justify-content-between flex-column ">
+                            <img src="images/services/2.jpg" alt="">
+                            <span><svg viewBox="0 0 60 60" width="50px" xmlns="http://www.w3.org/2000/svg" id="fi_4256823">
+                                <g id="Page-1" fill="none" fill-rule="evenodd">
+                                  <g id="041---Trade-Agreement" fill="rgb(0,0,0)" fill-rule="nonzero"
+                                    transform="translate(-1)">
+                                    <path id="Shape"
+                                      d="m6.275 11.471c.63902897.5317844 1.5175585.6718918 2.29029836.3652556s1.31616872-1.0110006 1.41670164-1.8362556h27.018c1.6568542 0 3-1.34314575 3-3v-2c0-1.65685425-1.3431458-3-3-3h-27.018c-.10045161-.82505347-.64358807-1.52932533-1.41603302-1.83613563-.77244494-.3068103-1.65078927-.1671417-2.28996698.36413563l-4.468 3.721c-.51479061.4383295-.81063931 1.08096502-.80890567 1.75708566.00173364.67612063.300874 1.31723054.81790567 1.75291434zm-3.175-5.693 4.457-3.714c.0463924-.04033484.10553332-.06299962.167-.064.04107372.00094668.08153959.01012801.119.027.09817199.04109306.1606805.1386382.157.245v.728c0 .55228475.44771525 1 1 1h28c.5522847 0 1 .44771525 1 1v2c0 .55228475-.4477153 1-1 1h-28c-.55228475 0-1 .44771525-1 1v.728c.00400926.1058727-.05761315.20327586-.155.245-.09465812.0458643-.20753958.0309183-.287-.038l-4.451-3.706c-.06765268-.05684916-.10680073-.14063331-.107-.229-.00058068-.08503049.03593271-.16609022.1-.222z">
+                                    </path>
+                                    <path id="Shape"
+                                      d="m55.725 10.529c-.639029-.53178436-1.5175585-.67189181-2.2902984-.3652556-.7727398.3066362-1.3161687 1.0110006-1.4167016 1.8362556h-27.018c-1.6568542 0-3 1.3431458-3 3v2c0 1.6568542 1.3431458 3 3 3h27.018c.0972716.8269145.6401981 1.5338782 1.4140091 1.8412311.7738111.3073529 1.6538496.165582 2.2919909-.3692311l4.468-3.721c.5147906-.4383295.8106393-1.080965.8089057-1.7570857-.0017337-.6761206-.300874-1.3172305-.8179057-1.7529143zm3.175 5.693-4.459 3.714c-.0803774.0668449-.192203.0810679-.2867545.0364722s-.1547026-.1399325-.1542455-.2444722v-.728c0-.5522847-.4477153-1-1-1h-28c-.5522847 0-1-.4477153-1-1v-2c0-.5522847.4477153-1 1-1h28c.5522847 0 1-.4477153 1-1v-.728c-.0040093-.1058727.0576131-.2032759.155-.245.0944764-.0469739.2080038-.0319424.287.038l4.449 3.706c.0683992.056467.1083054.1403068.109.229.0005807.0850305-.0359327.1660902-.1.222z">
+                                    </path>
+                                    <path id="Shape"
+                                      d="m59 27-5.215.008c-1.2344084-.0036706-2.3230624.8079307-2.672 1.992h-3.173c-.462531.0016787-.9189194-.1059084-1.332-.314l-5.377-2.694c-2.6686941-1.3200086-5.8003059-1.3200086-8.469 0l-.263.132-.268-.136c-2.6689461-1.3189302-5.8000539-1.3189302-8.469 0l-5.375 2.693c-.4110034.20945-.8657051.3187566-1.327.319h-6.173c-.3487301-1.1833567-1.43633148-1.9947806-2.67-1.992l-5.217-.008c-1.1045695 0-2 .8954305-2 2v16c0 1.1045695.8954305 2 2 2l5.019.008 3 1.25c-.0462518 1.3101403.6182742 2.5432222 1.738 3.225.550245.3297209 1.1795291.5042341 1.821.505.3036919-.0005503.6060937-.0395266.9-.116.026-.007.05-.02.076-.028.2153683.9600838.8130897 1.790754 1.655 2.3.5503558.3280264 1.1793033.5008142 1.82.5.3036919-.0005503.6060937-.0395266.9-.116.026-.007.049-.02.075-.027.2172561.9611945.8175952 1.7919887 1.662 2.3.8150289.4908119 1.7939197.6311171 2.714.389.023-.006.044-.018.067-.024.2111237.9462179.8000444 1.764926 1.63 2.266l.014.008.028.018c.5483305.3299168 1.1760694.5044807 1.816.505.3036687.0000786.6061079-.0385664.9-.115.6587805-.1706838 1.2540702-.5284133 1.714-1.03l.583.453c.6129233.4733928 1.3655481.7301293 2.14.73.1608953-.0001056.3215979-.011131.481-.033.904913-.1191186 1.7267021-.5892768 2.288-1.309.016-.018.032-.038.046-.057.5778535-.7647658.8229962-1.7301954.68-2.678l.044-.005c.9283614-.1177614 1.7697303-.6057049 2.333-1.353.4760477-.6172488.7347937-1.3745027.736-2.154.2269426.0136025.4546689.0052302.68-.025.9265459-.118359 1.7660238-.6058908 2.328-1.352.481187-.6198531.7422545-1.3822971.742-2.167.0006438-.3996908-.0649097-.7967291-.194-1.175.4919556-.1271369.9487192-.3640659 1.336-.693l9 .008h.006l5.222-.008c1.1045695 0 2-.8954305 2-2v-16c0-1.1045695-.8954305-2-2-2zm-18.657.784 5.365 2.688c.6925556.3478952 1.456975.5287256 2.232.528h3.166l1.557 14.006-6.741-.006c.071149-.3231877.0973962-.6546422.078-.985-.11418-1.1902716-.7331139-2.2744982-1.7-2.978l-10.1-7.064c-1.2769329-.9146154-3.0438578-.6852864-4.045.525l-4.644 5.554c-.8617413 1.0231202-2.3823914 1.1718119-3.426.335-.2369814-.1884755-.3744523-.4752112-.373-.778-.0000883-.2075583.0661302-.4097174.189-.577l4.611-6.589c.7638359-1.0906834 1.7873095-1.9739364 2.978-2.57l4.163-2.086c2.1076281-1.0422215 4.5804378-1.0433306 6.689-.003zm-37.343 1.216 5.217.008c.22588466.0000308.44106389.0962702.59166589.2646237.15060199.1683536.22236919.3928833.19733411.6173763l-1.681 15.117-4.325-.007zm10.784 20.767c-.7605667-.4652397-1.0112911-1.452162-.565-2.224l.442-.755c.2097743-.3664064.5583658-.6328067.967-.739.128803-.0325569.2611461-.0490158.394-.049.2819041.0007806.5583423.0778378.8.223.48991.2951669.7864443.828091.779 1.4.0012253.2875547-.0732711.5703649-.216.82l-.442.754c-.2098032.3667857-.5582705.6338119-.967.741-.4041671.1055213-.8337977.0438881-1.192-.171zm4.452 2.661c-.7602076-.4655707-1.0104696-1.4524194-.564-2.224l.443-.757c.2100345-.3653596.5581355-.6309398.966-.737.1287045-.0333026.2610579-.0504347.394-.051.2819109.0007308.5583622.0777916.8.223.7446411.4610865.9974322 1.4247698.575 2.192v.006l-.453.78-.006.012c-.2101919.3604078-.5556741.6218924-.9596199.7263061-.4039457.1044136-.8328663.0431001-1.1913801-.1703061zm4.464 2.656c-.7604052-.4568402-1.0170331-1.4371765-.578-2.208l.008-.011.442-.757c.007-.011.012-.024.018-.036.2105442-.3549418.5537054-.6114857.9537172-.7129897.4000119-.1015039.8239749-.0396196 1.1782828.1719897.7639491.4592601 1.0192592 1.4458068.574 2.218l-.454.78c-.2086204.3596339-.552571.6207466-.9550437.7250288-.4024726.1042821-.8299445.0430477-1.1869563-.1700288zm5.639 2.827c-.4023506.1066126-.8307472.0452584-1.187-.17l-.014-.009c-.7552071-.454086-1.0081653-1.4290199-.569-2.193l.281-.484.179-.308c.2794378-.4786642.7917398-.7732569 1.346-.774.2858572.0011491.5660829.0795846.811.227.7576049.4557286 1.0103002 1.4344777.568 2.2l-.462.794c-.2098878.358133-.5552216.6165926-.958.717zm13.126-12.472c-.4354765-.3399312-1.0640687-.2624765-1.404.173-.3399312.4354765-.2624765 1.0640687.173 1.404l.792.62c.3272906.2518848.5403594.6241103.5918163 1.0338874s-.062965.8231266-.3178163 1.1481126c-.2417968.3228064-.6034026.5346388-1.0032207.587697-.399818.0530582-.8041577-.0571288-1.1217793-.305697l-.657-.512c-.0085039-.0076155-.0175255-.0146323-.027-.021-.4366218-.3308601-1.0581734-.2488299-1.3940092.1839764s-.2609249 1.0552561.1680092 1.3960236l.017.013c.6761477.5335882.7969906 1.5119253.271 2.194-.2425662.3195266-.6030168.5285745-1.0008181.5804371s-.7998008-.0577822-1.1161819-.3044371c-.3022276-.233801-.7112692-.274938-1.054-.106-.312532.1525367-.5241154.4556735-.5595257.8016356-.0354102.3459622.1103755.6856767.3855257.8983644.6501931.5202856.7857367 1.4555362.31 2.139l-.036.045c-.2410164.3211326-.6017276.5310666-1 .582-.4016062.0547672-.8084444-.0532429-1.13-.3l-.743-.577c.7897978-1.6794368.1811792-3.6841203-1.409-4.641-.8143426-.4916457-1.7931438-.6323506-2.713-.39-.027.007-.05.021-.077.028-.2170394-.9612923-.8174343-1.7921637-1.662-2.3-.8147979-.4904279-1.7932242-.6307183-2.713-.389-.026.007-.049.02-.074.027-.2111429-.9442465-.7964112-1.762397-1.621854-2.2672008s-1.8203968-.6530464-2.757146-.4107992c-.026.007-.049.021-.075.028-.2158003-.9598897-.813411-1.790406-1.655-2.3-.8193836-.489351-1.8008002-.6296239-2.7244605-.3894045-.9236604.2402193-1.7123855.8408588-2.1895395 1.6674045l-.325.556-2.313-.958 1.594-14.374h6.166c.7734333.0010324 1.5363992-.1787509 2.228-.525l5.363-2.688c1.6994658-.8351043 3.6505177-1.0017663 5.467-.467l-1.525.765c-1.4889677.7451004-2.7683273 1.8501894-3.722 3.215l-4.605 6.581c-.9223639 1.2923791-.6728867 3.0804451.568 4.071 1.8955496 1.5141724 4.6528671 1.2399052 6.213-.618l4.64-5.549c.3359657-.4085633.9319955-.4848201 1.36-.174l10.068 7.037c.4966124.3596675.8180624.9124888.885 1.522.0428146.4395113-.1046086.8763208-.405 1.2-.5911899.5564121-1.5040381.5859832-2.13.069zm17.535-.439-4.324.007-1.676-15.117c-.0250744-.2248398.0469537-.4496989.1980004-.6181227.1510467-.1684237.3667666-.2644164.5929996-.2638773l5.209-.008z">
+                                    </path>
+                                  </g>
+                                </g>
+                              </svg></span>
+                            <div class="action-btn">
+                              <a href="">Trading</a>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="#" class="service-card">
+                        <div class="card m-3">
+                          <div class="card-body card-abt image-card d-flex justify-content-between flex-column ">
+                            <img src="images/services/3.jpg" alt="">
+                            <span><svg id="fi_10506751" enable-background="new 0 0 512 512" width="50px"
+                                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                  <path
+                                    d="m494.5 417.369h-2.501v-113.774c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v77.748h-35.497v-44.904c0-8.34-6.785-15.125-15.125-15.125h-41.964c-8.34 0-15.124 6.785-15.124 15.125v44.904h-334.288v-199.894l95.771 45.439c4.342 2.059 9.36 1.756 13.425-.813 4.062-2.569 6.488-6.973 6.488-11.78v-32.846l95.771 45.439c4.342 2.059 9.36 1.756 13.425-.813 4.062-2.569 6.488-6.973 6.488-11.78v-32.67l111.396 54.667c6.192 3.039 13.112 4.646 20.011 4.646h73.143c3.354 0 6.081 2.728 6.081 6.081v21.574c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-21.574c0-11.624-9.457-21.081-21.081-21.081h-21.689l-9.204-171.294c-.447-8.333-7.334-14.86-15.679-14.86h-71.09c-8.345 0-15.231 6.527-15.679 14.859l-7.601 141.49-58.531-28.724c-4.347-2.134-9.399-1.879-13.512.683-4.111 2.562-6.566 6.984-6.566 11.829v32.696l-95.771-45.439c-4.343-2.061-9.36-1.757-13.424.812-4.062 2.569-6.488 6.973-6.488 11.78v32.847l-95.771-45.439c-4.344-2.061-9.362-1.757-13.424.812-4.063 2.569-6.489 6.973-6.489 11.78v237.599h-2.501c-9.649 0-17.5 7.851-17.5 17.5v19.849c0 9.649 7.851 17.5 17.5 17.5h38.647c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-38.647c-1.378 0-2.5-1.122-2.5-2.5v-19.849c0-1.378 1.122-2.5 2.5-2.5h477c1.379 0 2.5 1.122 2.5 2.5v19.849c0 1.378-1.121 2.5-2.5 2.5h-403.349c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h403.349c9.649 0 17.5-7.851 17.5-17.5v-19.849c0-9.65-7.851-17.5-17.5-17.5zm-141.942-361.923c.02-.373.327-.664.7-.664h71.09c.373 0 .681.292.7.664l1.766 32.871h-76.021zm-2.572 47.871h77.635l6.588 122.62h-36.434c-4.62 0-9.255-1.076-13.402-3.111l-39.758-19.511zm127.013 293.026v21.026h-35.497v-21.026zm-441.998 0h334.287v21.026h-334.287zm349.288 21.026v-80.93c0-.069.056-.125.124-.125h41.964c.069 0 .125.056.125.125v80.93z">
+                                  </path>
+                                  <path
+                                    d="m86.01 262.977c-7.134 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.99c7.134 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.865v-47.122h20.865z">
+                                  </path>
+                                  <path
+                                    d="m155.862 262.977c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.866v-47.122h20.866z">
+                                  </path>
+                                  <path
+                                    d="m250.702 262.977h-24.989c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm-2.062 62.121h-20.866v-47.122h20.866z">
+                                  </path>
+                                  <path
+                                    d="m295.564 262.977c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.866v-47.122h20.866z">
+                                  </path>
+                                </g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                              </svg></span>
+                            <div class="action-btn">
+                              <a href="">Manufacturing </a>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="#" class="service-card">
+                        <div class="card m-3">
+                          <div class="card-body card-abt image-card d-flex justify-content-between flex-column ">
+                            <img src="images/services/4.jpg" alt="">
+                            <span><svg id="fi_10506751" enable-background="new 0 0 512 512" width="50px"
+                                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                  <path
+                                    d="m494.5 417.369h-2.501v-113.774c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v77.748h-35.497v-44.904c0-8.34-6.785-15.125-15.125-15.125h-41.964c-8.34 0-15.124 6.785-15.124 15.125v44.904h-334.288v-199.894l95.771 45.439c4.342 2.059 9.36 1.756 13.425-.813 4.062-2.569 6.488-6.973 6.488-11.78v-32.846l95.771 45.439c4.342 2.059 9.36 1.756 13.425-.813 4.062-2.569 6.488-6.973 6.488-11.78v-32.67l111.396 54.667c6.192 3.039 13.112 4.646 20.011 4.646h73.143c3.354 0 6.081 2.728 6.081 6.081v21.574c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-21.574c0-11.624-9.457-21.081-21.081-21.081h-21.689l-9.204-171.294c-.447-8.333-7.334-14.86-15.679-14.86h-71.09c-8.345 0-15.231 6.527-15.679 14.859l-7.601 141.49-58.531-28.724c-4.347-2.134-9.399-1.879-13.512.683-4.111 2.562-6.566 6.984-6.566 11.829v32.696l-95.771-45.439c-4.343-2.061-9.36-1.757-13.424.812-4.062 2.569-6.488 6.973-6.488 11.78v32.847l-95.771-45.439c-4.344-2.061-9.362-1.757-13.424.812-4.063 2.569-6.489 6.973-6.489 11.78v237.599h-2.501c-9.649 0-17.5 7.851-17.5 17.5v19.849c0 9.649 7.851 17.5 17.5 17.5h38.647c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-38.647c-1.378 0-2.5-1.122-2.5-2.5v-19.849c0-1.378 1.122-2.5 2.5-2.5h477c1.379 0 2.5 1.122 2.5 2.5v19.849c0 1.378-1.121 2.5-2.5 2.5h-403.349c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h403.349c9.649 0 17.5-7.851 17.5-17.5v-19.849c0-9.65-7.851-17.5-17.5-17.5zm-141.942-361.923c.02-.373.327-.664.7-.664h71.09c.373 0 .681.292.7.664l1.766 32.871h-76.021zm-2.572 47.871h77.635l6.588 122.62h-36.434c-4.62 0-9.255-1.076-13.402-3.111l-39.758-19.511zm127.013 293.026v21.026h-35.497v-21.026zm-441.998 0h334.287v21.026h-334.287zm349.288 21.026v-80.93c0-.069.056-.125.124-.125h41.964c.069 0 .125.056.125.125v80.93z">
+                                  </path>
+                                  <path
+                                    d="m86.01 262.977c-7.134 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.99c7.134 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.865v-47.122h20.865z">
+                                  </path>
+                                  <path
+                                    d="m155.862 262.977c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.866v-47.122h20.866z">
+                                  </path>
+                                  <path
+                                    d="m250.702 262.977h-24.989c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm-2.062 62.121h-20.866v-47.122h20.866z">
+                                  </path>
+                                  <path
+                                    d="m295.564 262.977c-7.135 0-12.938 5.804-12.938 12.938v51.245c0 7.134 5.804 12.938 12.938 12.938h24.989c7.135 0 12.938-5.804 12.938-12.938v-51.245c0-7.134-5.804-12.938-12.938-12.938zm22.928 62.121h-20.866v-47.122h20.866z">
+                                  </path>
+                                </g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                                <g></g>
+                              </svg></span>
+                            <div class="action-btn">
+                              <a href="">Real Estate & Contracting </a>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- close -->
+          <!-- section3 -->
+          <div class="section pp-scrollable slide slide3 section-vision">
+            <div class="slide-container">
+              <div class="container">
+                <div class="content-container w-100 loadtxt2">
+                  <h1><span>Beyond Horizons</span><br>Discover our vision Mission</h1>
+                  <p>
+                    Al Howail Group's vision is "to be a leading diversified group of companies with strong regional and
+                    global presence, recognized for its excellence in business performance and corporate social
+                    responsibility.
+                  </p>
+                </div>
+                <a href="#" class="d-flex align-items-center gap-2 btn-custom loadtxt3">
+                  <span>Discover More</span>
+                  <lottie-player src="images/icons/right-arrow.json" loop autoplay style="width: 60px;"
+                    class="right-arrow"></lottie-player>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- close -->
+          <!-- section4 -->
+          <div class="section pp-scrollable slide slide4 section-timeline">
+            <div class="slide-container">
+              <div class="timeline-carousel">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-8 offset-2 text-center mb-5">
+                      <h1>OUR TIMELINE</h1>
+                      <p class="lead text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam veritatis
+                        ducimus nobis eius quaerat ipsum accusantium, eveniet ut, consectetur, rerum dolor. Blanditiis quasi
+                        sequi, esse numquam excepturi quidem molestiae. Omnis.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+                  <!--Timeline item-->
+                  <div class="timeline-carousel__item">
+                    <div class="timeline-carousel__image">
+                      <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('images/services/1.jpg') center center; background-size:cover;">
+                      </div>
+                    </div>
+                    <div class="timeline-carousel__item-inner">
+                      <span class="year">2001-2003</span>
+                      <span class="month">Heading</span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nihil assumenda a numquam quam,
+                        provident in ut, totam quae doloremque ratione! Esse sint earum assumenda veniam expedita doloribus
+                        ratione. Sunt?</p>
+                    </div>
+                  </div>
+                  <!--/Timeline item-->
+    
+                  <!--Timeline item-->
+                  <div class="timeline-carousel__item">
+                    <div class="timeline-carousel__image">
+                      <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('images/services/2.jpg') center center; background-size:cover;">
+                      </div>
+                    </div>
+                    <div class="timeline-carousel__item-inner">
+                      <span class="year">2001-2003</span>
+                      <span class="month">Heading</span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nihil assumenda a numquam quam,
+                        provident in ut, totam quae doloremque ratione! Esse sint earum assumenda veniam expedita doloribus
+                        ratione. Sunt?</p>
+                    </div>
+                  </div>
+                  <!--/Timeline item-->
+    
+                  <!--Timeline item-->
+                  <div class="timeline-carousel__item">
+                    <div class="timeline-carousel__image">
+                      <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('images/services/3.jpg') center center; background-size:cover;">
+                      </div>
+                    </div>
+                    <div class="timeline-carousel__item-inner">
+                      <span class="year">2001-2003</span>
+                      <span class="month">Heading</span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nihil assumenda a numquam quam,
+                        provident in ut, totam quae doloremque ratione! Esse sint earum assumenda veniam expedita doloribus
+                        ratione. Sunt?</p>
+                    </div>
+                  </div>
+                  <!--/Timeline item-->
+    
+                  <!--Timeline item-->
+                  <div class="timeline-carousel__item">
+                    <div class="timeline-carousel__image">
+                      <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('images/services/4.jpg') center center; background-size:cover;">
+                      </div>
+                    </div>
+                    <div class="timeline-carousel__item-inner">
+                      <span class="year">2001-2003</span>
+                      <span class="month">Heading</span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nihil assumenda a numquam quam,
+                        provident in ut, totam quae doloremque ratione! Esse sint earum assumenda veniam expedita doloribus
+                        ratione. Sunt?</p>
+                    </div>
+                  </div>
+                  <!--/Timeline item-->
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none w-25">
+                     <img src="images/logo.png" alt="" class="w-100">
+                  </a>
+                  <span class="text-muted">© 2021 Company, Inc</span>
+                </div>
+            
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                  <li class="ms-3"><a class="text-muted" href="#">Home</a></li>
+                  <li class="ms-3"><a class="text-muted" href="#">About Us</a></li>
+                  <li class="ms-3"><a class="text-muted" href="#">News & Events</a></li>
+                  <li class="ms-3"><a class="text-muted" href="#">Career</a></li>
+                  <li class="ms-3"><a class="text-muted" href="#">Contact Us</a></li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+          <!-- close -->
+        </div>
+      </div>
 <!-- js-start -->
-
-<script src="js/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.pagepiling.min.js"></script>
 <script src="js/popper.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/anim.js"></script>
-<script src="js/scroller.js"></script>
+<script src="js/lottie-player.js"></script>
 <script src="js/custom.js"></script>
-<!-- js-close -->
+<!-- counter-start -->
+<script>
+  const counters = document.querySelectorAll(".counter");
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = Number(counter.getAttribute("data-target"));
+    const c = Number(counter.innerText);
+    const increment = target / 10000; // Speed adjusted to 100s
+
+    if (c < target) {
+      counter.innerText = `${Math.ceil(c + increment)}`;
+      setTimeout(updateCounter, 100); // Delay set to 100ms
+    } else {
+      counter.innerText = target;
+    }
+  };
+  updateCounter();
+});
+</script>
+<!-- counter-close -->
 </body>
 </html>
 
