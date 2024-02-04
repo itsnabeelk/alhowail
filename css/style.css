@@ -828,3 +828,14 @@ a {
   right: 30px;
 }
 /* close */
+
+/* services */
+.item-details {
+  padding: 50px 50px;
+  margin-top: 50px;
+}
+.btn:hover {
+  color: #212529;
+  outline: none !important;
+}
+/* close */
