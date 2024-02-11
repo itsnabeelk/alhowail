@@ -12,6 +12,70 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <!-- css-close -->
+    <style>
+      .carousel.carousel-fade .carousel-item {
+        opacity: 0;
+        transition: opacity 2s linear;
+      }
+    
+      .carousel.carousel-fade .carousel-item.active,
+      .carousel.carousel-fade .carousel-item-next.carousel-item-start,
+      .carousel.carousel-fade .carousel-item-prev.carousel-item-end {
+        opacity: 1;
+      }
+    
+      .carousel.carousel-fade .carousel-item-next,
+      .carousel.carousel-fade .carousel-item-prev,
+      .carousel.carousel-fade .carousel-item.active:not(.carousel-item-start):not(.carousel-item-end) {
+        opacity: 0;
+      }
+    
+      .carousel.carousel-fade .carousel-item-next.carousel-item-start,
+      .carousel.carousel-fade .carousel-item-prev.carousel-item-end {
+        opacity: 0;
+      }
+    
+      .carousel.carousel-fade .carousel-item-prev,
+      .carousel.carousel-fade .carousel-item-next:not(.carousel-item-start):not(.carousel-item-end),
+      .carousel.carousel-fade .carousel-item.active:not(.carousel-item-start):not(.carousel-item-end),
+      .carousel.carousel-fade .carousel-item-next.carousel-item-start,
+      .carousel.carousel-fade .carousel-item-prev.carousel-item-end {
+        opacity: 1;
+      }
+    
+      .carousel.carousel-fade .carousel-item:not(.active) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: opacity 2s linear, background-color 2s linear;
+        background-color: rgba(0, 0, 0, 0);
+      }
+    
+      .carousel.carousel-fade .carousel-item:not(.active).next,
+      .carousel.carousel-fade .carousel-item:not(.active).prev {
+        opacity: 0;
+      }
+    
+      .carousel.carousel-fade .active.carousel-item + .carousel-item:not(.carousel-item-start),
+      .carousel.carousel-fade .carousel-item:not(.carousel-item-start).next,
+      .carousel.carousel-fade .carousel-item.active:not(.carousel-item-start),
+      .carousel.carousel-fade .carousel-item-next.carousel-item-start {
+        animation: color-fade 2s ease forwards;
+      }
+    
+      @keyframes color-fade {
+        0% {
+          opacity: 0;
+          background-color: rgba(0, 0, 0, 0);
+        }
+        100% {
+          opacity: 1;
+          background-color: rgba(0, 0, 0, 1);
+        }
+      }
+    </style>
 </head>
     <body class="theme-yellow homepage dark-horizontal">
       <div class="wrapper">
@@ -76,75 +140,65 @@
         <div class="home-piling pagepiling a-pagepiling full-height">
           <!--Section 1-->
           <div class="section pp-scrollable slide slide1">
-            <div class="">
-              <div id="carouselExampleDark" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <video onloadedmetadata="this.muted=true" autoplay="" loop="" preload="auto" class="w-100 h-100">
-                      <source src="images/banner/banner1.mp4" type="video/mp4" class="w-100">
-                    </video>
-                    <div class="container">
-                      <div class="banner-content loadtxt3">
-                        <h1>Building the future with excellence</h1>
-                        <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of
-                          activities.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <video onloadedmetadata="this.muted=true" autoplay="" loop="" preload="auto" class="w-100">
-                      <source src="images/banner/banner2.mp4" type="video/mp4" class="w-100">
-                    </video>
-                    <div class="container">
-                      <div class="banner-content loadtxt3">
-                        <h1>Building the future with excellence</h1>
-                        <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of
-                          activities.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <video onloadedmetadata="this.muted=true" autoplay="" loop="" preload="auto" class="w-100">
-                      <source src="images/banner/banner3.mp4" type="video/mp4" class="w-100">
-                    </video>
-                    <div class="container">
-                      <div class="banner-content loadtxt3">
-                        <h1>Building the future with excellence</h1>
-                        <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of
-                          activities.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+            <div class="carousel carousel-fade" id="carouselExampleDark" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
-              <span class="scroll-btn">
-                <a href="#">
-                  <span class="mouse">
-                    <span>
-                    </span>
-                  </span>
-                </a>
-                <p>scroll Down</p>
-              </span>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <video muted autoplay loop preload="auto" class="w-100 h-100">
+                    <source src="images/banner/banner1.mp4" type="video/mp4">
+                  </video>
+                  <div class="container">
+                    <div class="banner-content loadtxt3">
+                      <h1>Building the future with excellence</h1>
+                      <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video muted autoplay loop preload="auto" class="w-100">
+                    <source src="images/banner/banner2.mp4" type="video/mp4">
+                  </video>
+                  <div class="container">
+                    <div class="banner-content loadtxt3">
+                      <h1>Building the future with excellence</h1>
+                      <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video muted autoplay loop preload="auto" class="w-100">
+                    <source src="images/banner/banner3.mp4" type="video/mp4">
+                  </video>
+                  <div class="container">
+                    <div class="banner-content loadtxt3">
+                      <h1>Building the future with excellence</h1>
+                      <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <span class="scroll-btn">
+              <a href="#">
+                <span class="mouse">
+                  <span></span>
+                </span>
+              </a>
+              <p>Scroll Down</p>
+            </span>
           </div>
           <!-- close -->
           <!--Section 2-->
@@ -455,6 +509,14 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/lottie-player.js"></script>
 <script src="js/custom.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 5000, // Adjust this value (in milliseconds) to control the interval between slides
+      pause: 'hover'
+    });
+  });
+</script>
 <!-- counter-start -->
 <script>
   const counters = document.querySelectorAll(".counter");
@@ -476,6 +538,7 @@ counters.forEach((counter) => {
 });
 </script>
 <!-- counter-close -->
+
 </body>
 </html>
 
