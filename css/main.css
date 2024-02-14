@@ -3313,11 +3313,11 @@ a.btn-play i {
     font-weight: 500;
     font-size: 5vmin;
     line-height: 7.5vmin;
-    color: #0f2d52;
+    color: #000;
 }
 
 .home-piling .slide1 {
-    background: #0f2d52;
+    background: #ffffff;
 }
 
 /*.home-piling .slide1 .slide-bg > .inside {
