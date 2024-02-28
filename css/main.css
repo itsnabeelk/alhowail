@@ -1113,7 +1113,7 @@ label.filterselect:after {
 
 @media (min-width: 768px) {
     .section-item+.section-item {
-        margin-top: 4rem;
+        margin: 5rem 0;
     }
 
     .section {
@@ -7739,19 +7739,13 @@ a.phone-link {
     color: #ffb71b !important;
 }
 
-.theme-yellow .nav-toggle-btn:hover .stick,
-.theme-yellow .social-rounded a:hover,
-.theme-yellow .btn-primary,
-.theme-yellow .btn-play:hover {
-    background-color: #54c8e8;
+.theme-yellow .nav-toggle-btn:hover .stick, .theme-yellow .social-rounded a:hover, .theme-yellow .btn-primary, .theme-yellow .btn-play:hover {
+    background-color: rgba(15, 45, 82, 1);
 }
 
-.theme-yellow .social-rounded a:hover,
-.theme-yellow .btn-primary,
-.theme-yellow .btn-play {
-    border-color: #54c8e8;
+.theme-yellow .social-rounded a:hover, .theme-yellow .btn-primary, .theme-yellow .btn-play {
+    border-color: rgba(15, 45, 82, 1);
 }
-
 
 .theme-white .navbar-nav>ul>li>a:before,
 .theme-white .text-primary,
@@ -9588,7 +9582,7 @@ a.phone-link {
 
 .abstract1,
 .strategycontent p.abstract1 {
-    color: #1daee5;
+    color: #000000;
     font-size: 1.5rem;
     line-height: 2.25rem;
     font-weight: 500;
@@ -9797,6 +9791,7 @@ a.phone-link {
 
 .industrial .strategycontent h3 {
     color: #ffb71b;
+    font-weight: 700;
 }
 
 .realestate .strategycontent h3 {
@@ -10045,8 +10040,8 @@ h3.subtitle-blue {
     position: relative;
     display: block;
     background-color: #f3fbfe;
-    padding: 60px 40px;
-    margin-top: -15px;
+    padding: 80px 40px;
+margin-bottom: 100px;
 }
 
 .strategy.strategycontent {
@@ -10057,12 +10052,12 @@ h3.subtitle-blue {
     vertical-align: top;
     top: -25px !important;
 }
-
+/* 
 .strategy.strategycontent h3 {
     display: inline-block;
     vertical-align: middle;
     padding-left: 135px;
-}
+} */
 
 /*.companylist:hover.company-logo { border: solid 1px #ccc;}*/
 .companylist .company-logo {
@@ -10100,7 +10095,7 @@ h3.subtitle-blue {
 .company-desc h4 {
     font-size: 1.875rem;
     font-weight: 500 !important;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     color: #ffb71b;
 }
 
@@ -10860,6 +10855,14 @@ span.recaptcha img {
     letter-spacing: -1px;
 }
 
+.address-container .address a {
+    color: #fff;
+}
+
+.address-container .style2 a {
+    color: #000;
+}
+
 .address-container .address.style2 {
     background-color: rgba(255, 255, 255, 0);
     color: #636569;
@@ -10896,6 +10899,10 @@ span.recaptcha img {
 
 .address-container:hover .address.style2 h2 {
     color: #ffb71b;
+}
+
+.address-container:hover a {
+    color: #fff;
 }
 
 .address-container .address span.icon {
@@ -11935,4 +11942,8 @@ ul.relatednews li:nth-child(2) {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0)
+}
+
+.vh-50{
+    height:50vh;
 }

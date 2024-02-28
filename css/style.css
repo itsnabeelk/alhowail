@@ -835,7 +835,56 @@ a {
   margin-top: 50px;
 }
 .btn:hover {
-  color: #212529;
+  color: #ffffff;
   outline: none !important;
 }
 /* close */
+
+.history-sec {
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-position-y: 100px;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.tp-cta-4::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #22241f;
+  opacity: 0.7;
+}
+
+.tp-cta-4__shap {
+  position: absolute;
+  content: "";
+  background: #ffc107;
+  width: 136px;
+  height: 183px;
+  bottom: -50px;
+  right: 122px;
+  border-radius: 60px 60px 0 0;
+  transform: rotate(-23deg);
+}
+.tp-cta-shap {
+  position: absolute;
+  top: -79px;
+  left: -77px;
+  animation: moving 9s linear infinite;
+}
+.tp-cta-title {
+  font-size: 50px;
+  color: #fff ;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
+}
