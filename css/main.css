@@ -9608,16 +9608,7 @@ a.phone-link {
     margin-top: 3vmin;
 }
 
-.lightbg-right {
-    background: rgba(255, 255, 255, 1);
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(243, 251, 254, 1) 50%, rgba(243, 251, 254, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(243, 251, 254, 1)), color-stop(100%, rgba(243, 251, 254, 1)));
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(243, 251, 254, 1) 50%, rgba(243, 251, 254, 1) 100%);
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(243, 251, 254, 1) 50%, rgba(243, 251, 254, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(243, 251, 254, 1) 50%, rgba(243, 251, 254, 1) 100%);
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(243, 251, 254, 1) 50%, rgba(243, 251, 254, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3fbfe', GradientType=1);
-}
+
 
 .lightbg-left {
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(243, 251, 254, 1)), color-stop(50%, rgba(243, 251, 254, 1)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
@@ -11947,3 +11938,66 @@ ul.relatednews li:nth-child(2) {
 .vh-50{
     height:50vh;
 }
+
+  .carousel.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 2s linear;
+  }
+
+  .carousel.carousel-fade .carousel-item.active,
+  .carousel.carousel-fade .carousel-item-next.carousel-item-start,
+  .carousel.carousel-fade .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+  }
+
+  .carousel.carousel-fade .carousel-item-next,
+  .carousel.carousel-fade .carousel-item-prev,
+  .carousel.carousel-fade .carousel-item.active:not(.carousel-item-start):not(.carousel-item-end) {
+    opacity: 0;
+  }
+
+  .carousel.carousel-fade .carousel-item-next.carousel-item-start,
+  .carousel.carousel-fade .carousel-item-prev.carousel-item-end {
+    opacity: 0;
+  }
+
+  .carousel.carousel-fade .carousel-item-prev,
+  .carousel.carousel-fade .carousel-item-next:not(.carousel-item-start):not(.carousel-item-end),
+  .carousel.carousel-fade .carousel-item.active:not(.carousel-item-start):not(.carousel-item-end),
+  .carousel.carousel-fade .carousel-item-next.carousel-item-start,
+  .carousel.carousel-fade .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+  }
+
+  .carousel.carousel-fade .carousel-item:not(.active) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 2s linear, background-color 2s linear;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .carousel.carousel-fade .carousel-item:not(.active).next,
+  .carousel.carousel-fade .carousel-item:not(.active).prev {
+    opacity: 0;
+  }
+
+  .carousel.carousel-fade .active.carousel-item + .carousel-item:not(.carousel-item-start),
+  .carousel.carousel-fade .carousel-item:not(.carousel-item-start).next,
+  .carousel.carousel-fade .carousel-item.active:not(.carousel-item-start),
+  .carousel.carousel-fade .carousel-item-next.carousel-item-start {
+    animation: color-fade 0.5s ease forwards;
+  }
+
+  @keyframes color-fade {
+    0% {
+      opacity: 0.8;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 1);
+    }
+  }

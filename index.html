@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alhowail</title>
@@ -13,72 +13,15 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/news.css">
     <!-- css-close -->
     <style>
-      .carousel.carousel-fade .carousel-item {
-        opacity: 0;
-        transition: opacity 2s linear;
-      }
-    
-      .carousel.carousel-fade .carousel-item.active,
-      .carousel.carousel-fade .carousel-item-next.carousel-item-start,
-      .carousel.carousel-fade .carousel-item-prev.carousel-item-end {
-        opacity: 1;
-      }
-    
-      .carousel.carousel-fade .carousel-item-next,
-      .carousel.carousel-fade .carousel-item-prev,
-      .carousel.carousel-fade .carousel-item.active:not(.carousel-item-start):not(.carousel-item-end) {
-        opacity: 0;
-      }
-    
-      .carousel.carousel-fade .carousel-item-next.carousel-item-start,
-      .carousel.carousel-fade .carousel-item-prev.carousel-item-end {
-        opacity: 0;
-      }
-    
-      .carousel.carousel-fade .carousel-item-prev,
-      .carousel.carousel-fade .carousel-item-next:not(.carousel-item-start):not(.carousel-item-end),
-      .carousel.carousel-fade .carousel-item.active:not(.carousel-item-start):not(.carousel-item-end),
-      .carousel.carousel-fade .carousel-item-next.carousel-item-start,
-      .carousel.carousel-fade .carousel-item-prev.carousel-item-end {
-        opacity: 1;
-      }
-    
-      .carousel.carousel-fade .carousel-item:not(.active) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        transition: opacity 2s linear, background-color 2s linear;
-        background-color: rgba(0, 0, 0, 0);
-      }
-    
-      .carousel.carousel-fade .carousel-item:not(.active).next,
-      .carousel.carousel-fade .carousel-item:not(.active).prev {
-        opacity: 0;
-      }
-    
-      .carousel.carousel-fade .active.carousel-item + .carousel-item:not(.carousel-item-start),
-      .carousel.carousel-fade .carousel-item:not(.carousel-item-start).next,
-      .carousel.carousel-fade .carousel-item.active:not(.carousel-item-start),
-      .carousel.carousel-fade .carousel-item-next.carousel-item-start {
-        animation: color-fade 0.5s ease forwards;
-      }
-    
-      @keyframes color-fade {
-        0% {
-          opacity: 0.8;
-          background-color: rgba(0, 0, 0, 0);
-        }
-        100% {
-          opacity: 1;
-          background-color: rgba(0, 0, 0, 1);
-        }
+      body {
+        overflow: auto;
       }
     </style>
-</head>
+  </head>
+  
     <body class="theme-yellow homepage dark-horizontal">
       <div class="wrapper">
         <!-- header-start -->
