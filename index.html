@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alhowail</title>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <!-- css-start -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/jquery.pagepiling.css" rel="stylesheet">
@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/news.css">
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- css-close -->
     <style>
       body {
@@ -28,7 +32,7 @@
         <nav class="navbar navbar-light fixed-top bg--transparent">
           <div class="container">
             <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="" width="40%">
+              <img src="images/logo.svg" alt="" width="60%">
             </a>
             <div class="humb-menu">
               <a href="" class="text-white">EN</a>
@@ -42,7 +46,7 @@
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                   <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="" width="40%">
+                    <img src="images/logo.svg" alt="" width="40%">
                   </a>
                 </h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
@@ -53,17 +57,10 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
-                      data-bs-toggle="dropdown" aria-expanded="false">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">
                       Who We Are
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                      <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                      <li><a class="dropdown-item" href="about.html">GM Message</a></li>
-                      <li><a class="dropdown-item" href="about.html">Board of Directors</a></li>
-                      <li><a class="dropdown-item" href="about.html">Timeline</a></li>
-                    </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="sectors.html">Sectors</a>
@@ -90,9 +87,10 @@
             <div class="carousel carousel-fade" id="carouselExampleDark" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
-                  aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  aria-label="Slide 0"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -103,6 +101,7 @@
                     <div class="banner-content loadtxt3">
                       <h1>Building the future with excellence</h1>
                       <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
+                      <a href="">Read More</a>
                     </div>
                   </div>
                 </div>
@@ -114,6 +113,7 @@
                     <div class="banner-content loadtxt3">
                       <h1>Building the future with excellence</h1>
                       <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
+                      <a href="">Read More</a>
                     </div>
                   </div>
                 </div>
@@ -125,6 +125,19 @@
                     <div class="banner-content loadtxt3">
                       <h1>Building the future with excellence</h1>
                       <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
+                      <a href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video muted autoplay loop preload="auto" class="w-100">
+                    <source src="images/banner/banner3.mp4" type="video/mp4">
+                  </video>
+                  <div class="container">
+                    <div class="banner-content loadtxt3">
+                      <h1>Building the future with excellence</h1>
+                      <p>Established in 1969 and has since grown into a diversified conglomerate with a wide range of activities.</p>
+                      <a href="">Read More</a>
                     </div>
                   </div>
                 </div>
@@ -179,12 +192,14 @@
                         <div class="card card-abt m-3">
                           <div class="card-body image-card d-flex justify-content-between flex-column ">
                             <img src="images/services/1.jpg" alt="">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" id="fi_11481822" width="50px" data-name="Layer 1"
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" id="fi_11481822" width="50px" data-name="Layer 1"
                                 viewBox="0 0 512 512">
                                 <path
                                   d="M416.36,294.67A15.81,15.81,0,0,0,432.13,281a179.89,179.89,0,0,0,0-49.92,15.81,15.81,0,0,0-15.77-13.71H398.9a146.91,146.91,0,0,0-14.53-35L396.72,170a15.82,15.82,0,0,0,1.46-20.85,178.88,178.88,0,0,0-35.3-35.3A15.81,15.81,0,0,0,342,115.28l-12.35,12.35a146.47,146.47,0,0,0-35-14.52V95.64A15.81,15.81,0,0,0,281,79.87a180.66,180.66,0,0,0-49.92,0,15.81,15.81,0,0,0-13.71,15.77v17.47a146.64,146.64,0,0,0-35,14.52L170,115.28a15.82,15.82,0,0,0-20.85-1.46,178.88,178.88,0,0,0-35.3,35.3A15.81,15.81,0,0,0,115.28,170l12.35,12.35a146.91,146.91,0,0,0-14.53,35H95.64A15.81,15.81,0,0,0,79.87,231a179.89,179.89,0,0,0,0,49.92,15.81,15.81,0,0,0,15.77,13.71H113.1a146.91,146.91,0,0,0,14.53,35L115.28,342a15.82,15.82,0,0,0-1.46,20.85,178.88,178.88,0,0,0,35.3,35.3A15.82,15.82,0,0,0,170,396.72l12.34-12.35a146.88,146.88,0,0,0,35,14.52v17.47A15.81,15.81,0,0,0,231,432.13a179.89,179.89,0,0,0,49.92,0,15.81,15.81,0,0,0,13.71-15.77V398.89a146.47,146.47,0,0,0,35-14.52L342,396.72a15.82,15.82,0,0,0,20.85,1.46,178.61,178.61,0,0,0,35.3-35.3A15.81,15.81,0,0,0,396.72,342l-12.35-12.35a146.88,146.88,0,0,0,14.52-35Zm-31.54-9.75a131.08,131.08,0,0,1-17.29,41.71,8,8,0,0,0,1.09,9.94l16.74,16.74a162.52,162.52,0,0,1-32.06,32.05l-16.73-16.73a8,8,0,0,0-9.94-1.1,130.89,130.89,0,0,1-41.71,17.29,8,8,0,0,0-6.25,7.81V416.3a164.33,164.33,0,0,1-45.34,0V392.63a8,8,0,0,0-6.25-7.81,131.08,131.08,0,0,1-41.71-17.29,8,8,0,0,0-9.94,1.09l-16.74,16.74a162.52,162.52,0,0,1-32-32.06l16.73-16.73a8,8,0,0,0,1.1-9.94,130.89,130.89,0,0,1-17.29-41.71,8,8,0,0,0-7.81-6.25H95.7a163.94,163.94,0,0,1,0-45.34h23.66a8,8,0,0,0,7.81-6.25,131,131,0,0,1,17.29-41.71,8,8,0,0,0-1.1-9.94l-16.73-16.74a162.52,162.52,0,0,1,32.06-32l16.73,16.74a8,8,0,0,0,9.94,1.09,131.08,131.08,0,0,1,41.71-17.29,8,8,0,0,0,6.25-7.81V95.7a164.33,164.33,0,0,1,45.34,0v23.66a8,8,0,0,0,6.25,7.81,131.08,131.08,0,0,1,41.71,17.29,8,8,0,0,0,9.94-1.09l16.74-16.74a162.52,162.52,0,0,1,32.05,32.06l-16.73,16.73a8,8,0,0,0-1.1,9.94,130.89,130.89,0,0,1,17.29,41.71,8,8,0,0,0,7.81,6.25H416.3a163.94,163.94,0,0,1,0,45.34H392.63A8,8,0,0,0,384.82,284.92ZM256,161.49A94.51,94.51,0,1,0,350.51,256,94.62,94.62,0,0,0,256,161.49Zm0,173A78.51,78.51,0,1,1,334.51,256,78.6,78.6,0,0,1,256,334.51ZM85.22,98.92A231,231,0,0,0,63.3,126.73,8,8,0,1,1,50,117.81,247.52,247.52,0,0,1,73.46,88.08,8,8,0,0,1,85.22,98.92Zm27.35-35.5a8,8,0,0,1,2-11.13,248.05,248.05,0,0,1,290.29,5.34l-2.69-7.46a8,8,0,0,1,15.05-5.43l12.91,35.77a8,8,0,0,1-7.53,10.72,7.47,7.47,0,0,1-1.41-.13l-37.43-6.71a8,8,0,1,1,2.82-15.75l8.28,1.49a232.09,232.09,0,0,0-271.17-4.7A8,8,0,0,1,112.57,63.42ZM30.83,312A8,8,0,0,1,25,321.67a7.65,7.65,0,0,1-1.94.25,8,8,0,0,1-7.76-6.07,248.51,248.51,0,0,1-5.69-31.19A8,8,0,0,1,25.5,282.8,231.65,231.65,0,0,0,30.83,312ZM8.06,248.86a247.42,247.42,0,0,1,2.68-29.74,8,8,0,1,1,15.82,2.4,231.71,231.71,0,0,0-2.51,27.81,8,8,0,0,1-8,7.76h-.24A8,8,0,0,1,8.06,248.86Zm36.63-88.65A232.57,232.57,0,0,0,34.2,188a8,8,0,0,1-15.3-4.68,248.84,248.84,0,0,1,11.21-29.72,8,8,0,1,1,14.58,6.59ZM481.17,200a8,8,0,0,1,15.53-3.87,248.84,248.84,0,0,1,5.69,31.19,8,8,0,0,1-7,8.87,7.42,7.42,0,0,1-.94.06,8,8,0,0,1-7.93-7.07A230.2,230.2,0,0,0,481.17,200Zm22.77,63.12a247.42,247.42,0,0,1-2.68,29.74,8,8,0,0,1-7.9,6.8,8.31,8.31,0,0,1-1.21-.09,8,8,0,0,1-6.71-9.11A231.71,231.71,0,0,0,488,262.67a8,8,0,0,1,16,.47ZM462,394.19a247.52,247.52,0,0,1-23.45,29.73,8,8,0,1,1-11.76-10.84,231,231,0,0,0,21.92-27.81A8,8,0,1,1,462,394.19Zm31.11-65.53a248.84,248.84,0,0,1-11.21,29.72,8,8,0,1,1-14.58-6.59A232.57,232.57,0,0,0,477.8,324a8,8,0,0,1,15.3,4.68ZM399.43,448.58a8,8,0,0,1-2,11.13,248.09,248.09,0,0,1-290.29-5.33l2.69,7.45a8,8,0,0,1-15,5.43L81.85,431.49a8,8,0,0,1,8.94-10.59l37.43,6.71a8,8,0,1,1-2.82,15.75l-8.28-1.48a232.12,232.12,0,0,0,271.17,4.69A8,8,0,0,1,399.43,448.58Z">
                                 </path>
-                              </svg></span>
+                              </svg>
+                            </span>
                             <div class="action-btn">
                               <a href="services.html">Services</a>
                             </div>
@@ -447,46 +462,52 @@
           <!-- close -->
         </div>
       </div>
-<!-- js-start -->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.pagepiling.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/lottie-player.js"></script>
-<script src="js/custom.js"></script>
-<script>
-  $(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 5000, // Adjust this value (in milliseconds) to control the interval between slides
-      pause: 'hover'
+
+
+
+  <!-- js-start -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.pagepiling.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lottie-player.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 5000,
+        pause: 'hover'
+      });
     });
-  });
-</script>
-<!-- counter-start -->
-<script>
-  const counters = document.querySelectorAll(".counter");
-counters.forEach((counter) => {
-  counter.innerText = "0";
-  const updateCounter = () => {
-    const target = Number(counter.getAttribute("data-target"));
-    const c = Number(counter.innerText);
-    const increment = target / 10000; // Speed adjusted to 100s
+  </script>
+  <script>
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach((counter) => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = Number(counter.getAttribute("data-target"));
+        const c = Number(counter.innerText);
+        const increment = target / 10000; 
 
-    if (c < target) {
-      counter.innerText = `${Math.ceil(c + increment)}`;
-      setTimeout(updateCounter, 100); // Delay set to 100ms
-    } else {
-      counter.innerText = target;
-    }
-  };
-  updateCounter();
-});
-</script>
-<!-- counter-close -->
-
+        if (c < target) {
+          counter.innerText = `${Math.ceil(c + increment)}`;
+          setTimeout(updateCounter, 100);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  </script>
+  <script>
+    var counter = $('.counter2');
+    counter.counterUp({
+      time: 2500,
+      delay: 100
+    });
+  </script>
 </body>
 </html>
-
 
 

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alhowail</title>
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
   <!-- css-start -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="css/jquery.pagepiling.css" rel="stylesheet">
@@ -15,6 +15,11 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/news.css">
+  <!-- google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <!-- css-close -->
   <style>
     body {
@@ -23,15 +28,14 @@
   </style>
 </head>
 
-
 <body class="theme-yellow homepage dark-horizontal">
   <div class="animsition" style="animation-duration: 1500ms; opacity: 1;">
     <div class="wrapper parallax-start">
       <!-- header-start -->
-      <nav class="navbar navbar-light fixed-top bg--transparent">
+      <nav class="navbar navbar-light fixed-top bg--transparent" id="navbar">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" width="40%">
+            <img src="images/logo.svg" alt="" width="60%">
           </a>
           <div class="humb-menu">
             <a href="" class="text-white">EN</a>
@@ -45,7 +49,7 @@
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 <a class="navbar-brand" href="index.html">
-                  <img src="images/logo.png" alt="" width="40%">
+                  <img src="images/logo.svg" alt="" width="40%">
                 </a>
               </h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
@@ -56,17 +60,10 @@
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="about.html">
                     Who We Are
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                    <li><a class="dropdown-item" href="about.html">GM Message</a></li>
-                    <li><a class="dropdown-item" href="about.html">Board of Directors</a></li>
-                    <li><a class="dropdown-item" href="about.html">Timeline</a></li>
-                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="sectors.html">Sectors</a>
@@ -96,88 +93,220 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="main-title">
-                    <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                        CAREER<br>
+                    <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s"
+                      data-wow-delay="0.3s"
+                      style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                      CAREER<br>
                       <span class="text-primary">APPLY NOW</span>
-                  </h1>
+                    </h1>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
       <!-- close -->
 
 
-      <div class="container mt-5 ">
-        <div class="row mx-0 justify-content-centerwow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-          <div class="col-md-12 col-lg-12 px-lg-2 col-xl-12 px-xl-0 px-xxl-3">
-            <h2 class="mt-5 mb-2">Career Form</h2>
-            <p class="mb-5 col-md-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet id dolor atque eius, vitae voluptatibus ex ipsum dolore exercitationem repellendus aliquid, assumenda explicabo ad repellat. Obcaecati iste a delectus repellendus!</p>
-            <form method="POST" class="w-100 rounded-1 p-4 border bg-white" action="https://herotofu.com/start" enctype="multipart/form-data">
-       
-              <label class="d-block mb-4">
-                <span class="form-label d-block">Name</span>
-                <input name="message" class="form-control" rows="3" placeholder="Full Name">
-              </label>
-    
-              <label class="d-block mb-4">
-                <span class="form-label d-block">Email</span>
-                <input name="message" class="form-control" rows="3" placeholder="sample@email.com">
-              </label>
-    
-              <label class="d-block mb-4">
-                <span class="form-label d-block">Mobile Number</span>
-                <input name="message" class="form-control" rows="3" placeholder="05 XXXX XXX">
-              </label>
-    
-              <label class="d-block mb-4">
-                <span class="form-label d-block">Years of experience</span>
-                <select required="" name="experience" class="form-select">
-                  <option>Less than a year</option>
-                  <option>1 - 2 years</option>
-                  <option>2 - 4 years</option>
-                  <option>4 - 7 years</option>
-                  <option>7 - 10 years</option>
-                  <option>10+ years</option>
-                </select>
-              </label>
-      
-              <label class="d-block mb-4">
-                <span class="form-label d-block">Tell us more about yourself</span>
-                <textarea name="message" class="form-control" rows="3" placeholder="Message" style="min-height: 100px;"></textarea>
-              </label>
-      
-              <label class="d-block mb-4">
-                <span class="form-label d-block">Your CV</span>
-                <input required="" name="cv" type="file" class="form-control upload-cv">
-              </label>
-      
-              <div class="mb-3">
-                <button type="submit" class="btn btn-primary px-3 rounded-3">
-                  Apply Now
-                </button>
-              </div>
-            </form>
+
+      <section class="main bg-light">
+        <form id="signUpForm" action="#">
+          <!-- start step indicators -->
+          <div class="form-header d-flex mb-4">
+            <span class="stepIndicator">Personal & Contact Details</span>
+            <span class="stepIndicator">Education & Communication skills</span>
+            <span class="stepIndicator">Work Experience</span>
+            <span class="stepIndicator">Medical History</span>
           </div>
-        </div>
-      </div>
+          <!-- end step indicators -->
+
+          <!-- step 1 -->
+          <div class="step">
+            <div class="row">
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Full Name" oninput="this.className = ''" name="name">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Gender" oninput="this.className = ''" name="nationality ">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Mobile Number" oninput="this.className = ''" name="Age">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Date of Birth" oninput="this.className = ''" name="Age">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <select class="mb-3 custom-select" aria-label=".form-select-lg example">
+                  <option selected>Marital Status</option>
+                  <option value="1">Single</option>
+                  <option value="2">Married</option>
+                </select>
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Children" oninput="this.className = ''" name="City">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Place Of Birth" oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Position Applying" oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Nationality" oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Email" oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Skype ID" oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <select class="mb-3 custom-select" aria-label=".form-select-lg example">
+                  <option selected>Driving License</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Current Salary" oninput="this.className = ''" name="email">
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- step 2 -->
+          <div class="step">
+            <div class="row">
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Degree Name" oninput="this.className = ''" name="name">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Grade" oninput="this.className = ''" name="nationality ">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="College Name" oninput="this.className = ''" name="Age">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Year of Graduation" oninput="this.className = ''" name="Age">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Country" oninput="this.className = ''" name="City">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <select class="mb-3 custom-select" aria-label=".form-select-lg example">
+                  <option selected>English Spoken & Written</option>
+                  <option value="1">Average</option>
+                  <option value="2">Good</option>
+                  <option value="3">Excellent</option>
+                </select>
+              </div>
+              <div class="mb-3 col-lg-6">
+                <select class="mb-3 custom-select" aria-label=".form-select-lg example">
+                  <option selected>Computer Literate</option>
+                  <option value="1">Average</option>
+                  <option value="2">Good</option>
+                  <option value="3">Excellent</option>
+                </select>
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Other Languages Known" oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Other Skills" oninput="this.className = ''" name="email">
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- step 3 -->
+          <div class="step">
+            <div class="row">
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Current Job Position" oninput="this.className = ''" name="name">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Years of Experience" oninput="this.className = ''" name="nationality ">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Company Name" oninput="this.className = ''" name="Age">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Type of Business" oninput="this.className = ''" name="Age">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="text" placeholder="Direct Manager Mobile /Email" oninput="this.className = ''" name="City">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Previous Job Position" oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Years of Experience" oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Previous Company Name & Country" oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Type of Business " oninput="this.className = ''" name="email">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Direct Manager Mobile /Telephone" oninput="this.className = ''" name="email">
+              </div>
+            </div>
+          </div>
+          <!-- step 4 -->
+          <div class="step">
+            <div class="row">
+              <div class="mb-3 col-lg-6">
+                <select class="mb-3 custom-select" aria-label=".form-select-lg example">
+                  <option selected>Are you suffering from</option>
+                  <option value="1">High Blood Pressure</option>
+                  <option value="2">LowBlood Pressure</option>
+                  <option value="3">Diabetes</option>
+                  <option value="4">No</option>
+                </select>
+              </div>
+              <div class="mb-3 col-lg-6">
+                <select class="mb-3 custom-select" aria-label=".form-select-lg example">
+                  <option selected>Any medical surgeries before</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+              <div class="mb-3 col-lg-6">
+                <label>If any surgeries please specify</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Type Here.."></textarea>
+              </div>
+              <div class="mb-3 col-lg-6">
+                <label>Additional Important Information (If Any)</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Type Here.."></textarea>
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" placeholder="Required Salary(Total Package in SR / USD)" oninput="this.className = ''" name="email">
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <div class="form-footer d-flex">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </form>
+      </section>
 
 
 
-
-<!-- footer-start -->
+      <!-- footer-start -->
       <div class="container-fluid">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none w-25">
-               <img src="images/logo.png" alt="" class="w-75">
+              <img src="images/logo.png" alt="" class="w-75">
             </a>
             <span class="text-muted">© 2024 Company, Inc</span>
           </div>
-      
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-muted" href="index.html">Home</a></li>
             <li class="ms-3"><a class="text-muted" href="news.html">News & Events</a></li>
@@ -186,9 +315,12 @@
           </ul>
         </footer>
       </div>
-<!-- footer-close -->
+      <!-- footer-close -->
+
+
     </div>
   </div>
+
 
   <!-- js-start -->
   <script src="js/jquery.min.js"></script>
@@ -198,7 +330,16 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/lottie-player.js"></script>
   <script src="js/custom.js"></script>
-  <!-- counter-start -->
+
+
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 5000,
+        pause: 'hover'
+      });
+    });
+  </script>
   <script>
     const counters = document.querySelectorAll(".counter");
     counters.forEach((counter) => {
@@ -206,11 +347,11 @@
       const updateCounter = () => {
         const target = Number(counter.getAttribute("data-target"));
         const c = Number(counter.innerText);
-        const increment = target / 10000; // Speed adjusted to 100s
+        const increment = target / 10000;
 
         if (c < target) {
           counter.innerText = `${Math.ceil(c + increment)}`;
-          setTimeout(updateCounter, 100); // Delay set to 100ms
+          setTimeout(updateCounter, 100);
         } else {
           counter.innerText = target;
         }
@@ -218,7 +359,13 @@
       updateCounter();
     });
   </script>
-  <!-- counter-close -->
+  <script>
+    var counter = $('.counter2');
+    counter.counterUp({
+      time: 2500,
+      delay: 100
+    });
+  </script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@ body {
     background: #fff;
     opacity: 1;
     transition: 1s opacity;
+    font-family: "Cairo", sans-serif;
 }
 
 body.fade-out {
@@ -271,7 +272,6 @@ html>body .fs60 {
 }
 
 .font-barmeno {
-    font-family: 'Barmeno', sans-serif;
 }
 
 .small,
@@ -771,7 +771,6 @@ label.filterselect:after {
 }
 
 #loading #preloader {
-    font-family: 'Barmeno', sans-serif;
     color: #fff;
     position: absolute;
     text-align: center;
@@ -3433,7 +3432,6 @@ a.btn-play i {
     /*background-image: url("../images/bg-letter-solution.jpg");
   background-size: cover;*/
     font-size: 16vmin;
-    font-family: 'Barmeno', sans-serif;
     font-weight: normal;
     text-align: left;
     color: #54c8e8;
@@ -5774,7 +5772,6 @@ a:hover .project-metro-photo img {
     font-size: 1.5rem;
     color: #fff;
     font-weight: 500;
-    font-family: 'Barmeno', sans-serif;
 }
 
 .footer-content-flash h5:after {
@@ -8088,7 +8085,6 @@ a.phone-link {
     margin-top: 7px;
     margin-right: 5px;
     color: #54c8e8;
-    font-family: 'Barmeno', sans-serif;
 }
 
 #myVideo {
@@ -8139,7 +8135,6 @@ a.phone-link {
     font-size: 10px;
     letter-spacing: 1px;
     color: #fff;
-    font-family: 'Barmeno', sans-serif;
     text-transform: uppercase;
     clear: both;
     opacity: 0.5;
@@ -8492,7 +8487,6 @@ a.phone-link {
 .corevalues .valuescontainer .value-content .slide-title span {
     font-size: 2rem;
     color: #fff;
-    font-family: 'Barmeno', sans-serif;
 }
 
 .corevalues .valuescontainer .value-content .slide-title:before {
@@ -8656,7 +8650,6 @@ a.phone-link {
 .home-piling .mediablock.insightwrapper .title {
     font-size: 1.625rem;
     color: #0f2d52;
-    font-family: 'Barmeno', sans-serif;
     font-weight: 500;
     line-height: 1.875rem;
     -moz-transition: all 0.3s ease-in-out;
@@ -8753,7 +8746,6 @@ a.phone-link {
 .tweets-wrap .widget-title {
     position: absolute;
     bottom: 25px;
-    font-family: 'Barmeno', sans-serif;
     font-size: 24px;
 }
 
@@ -8806,7 +8798,6 @@ a.phone-link {
     white-space: normal;
     direction: rtl;
     text-align: right;
-    font-family: 'Almarai', sans-serif;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -8981,7 +8972,6 @@ a.phone-link {
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
-    font-family: 'Barmeno', sans-serif;
     -moz-border-radius: 100%;
     webkit-border-radius: 100%;
     border-radius: 100%;
@@ -9021,7 +9011,6 @@ a.phone-link {
 }
 
 .block-title {
-    font-family: 'Barmeno', sans-serif;
     font-size: 24px;
     color: #fff;
 }
@@ -9768,9 +9757,7 @@ a.phone-link {
 
 .strategycontent h3 {
     font-size: 2.5rem;
-    font-weight: 500px;
-    font-family: 'Barmeno', sans-serif;
-    line-height: 2.75rem;
+    line-height: 75px;
     color: #0f2d52;
     display: block;
     margin-bottom: 30px;
@@ -9865,8 +9852,8 @@ a.phone-link {
     -o-object-fit: inherit;
     object-fit: inherit;
     height: auto;
+    filter: invert(1);
 }
-
 .food .strategy .icon-investment {
     background-color: #93d500;
 }
@@ -10021,7 +10008,6 @@ svg {
 h3.subtitle-blue {
     font-size: 2.25rem;
     font-weight: 500px;
-    font-family: 'Barmeno', sans-serif;
     line-height: 2.625rem;
     color: #0f2d52;
     margin-top: 3.75rem;
@@ -10031,8 +10017,8 @@ h3.subtitle-blue {
     position: relative;
     display: block;
     background-color: #f3fbfe;
-    padding: 80px 40px;
-margin-bottom: 100px;
+    padding: 60px 40px;
+    margin-bottom: 100px;
 }
 
 .strategy.strategycontent {
@@ -10059,9 +10045,9 @@ margin-bottom: 100px;
 }
 
 .companylist .company-logo img {
-    width: 60%;
+    width: 80%;
     height: auto;
-    max-width: 195px;
+    max-width: 250px;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -10114,8 +10100,14 @@ margin-bottom: 100px;
     padding-left: 0;
     text-align: left;
     vertical-align: middle;
-    color: #0d6efd;
+    color: #54c8e8;
     font-weight: 700;
+}
+
+.strategy.strategycontent h3 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 135px;
 }
 
 .linkscontainer a:nth-child(2) {
@@ -10224,11 +10216,7 @@ a.plus.minus:before {
 						transform: none;
 	}*/
 
-.menu-lang-item:lang(ar) {
-    font-family: 'Almarai', sans-serif;
-    /*color: green !important;
-	text-align: right;*/
-}
+
 
 .mediablock .bx-wrapper {
     -moz-box-shadow: none;
@@ -10318,7 +10306,6 @@ a.plus.minus:before {
 .subpage-content-wrapper .corevalues .valuescontainer .value-content .slide-title span {
     font-size: 2.5rem;
     color: #0f2d52;
-    font-family: 'Barmeno', sans-serif;
 }
 
 .subpage-content-wrapper .corevalues .valuescontainer .value-content p {
@@ -10543,7 +10530,6 @@ li.listhighlight:hover {
 .subpage-content-wrapper .news-title span {
     font-size: 2.25rem;
     color: #0f2d52;
-    font-family: 'Barmeno', sans-serif;
     display: block;
     margin-top: 5px;
     font-weight: 500;
@@ -10603,7 +10589,6 @@ li.listhighlight:hover {
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
-    font-family: 'Barmeno', sans-serif;
     -moz-border-radius: 100%;
     webkit-border-radius: 100%;
     border-radius: 100%;
@@ -10759,7 +10744,6 @@ span.recaptcha img {
 }
 
 .gm-style .gm-style-iw h5 {
-    font-family: 'Barmeno', sans-serif;
     color: #0f2d52;
 }
 
@@ -11220,7 +11204,6 @@ ul.relatednews li:nth-child(2) {
     color: #1daee5;
     font-size: 1.5rem;
     display: block;
-    font-family: 'DIN Next Arabic';
     font-weight: 300;
 }
 
@@ -12001,3 +11984,9 @@ ul.relatednews li:nth-child(2) {
       background-color: rgba(0, 0, 0, 1);
     }
   }
+
+  .partner-sec {
+    margin-bottom: 100px;
+    padding: 100px 0;
+    background: #f3fbfe;
+}

@@ -115,7 +115,6 @@
   cursor: pointer;
   display: block;
   float: left;
-  font-family: inherit;
   font-size: 14px;
   font-weight: normal;
   height: 42px;
@@ -6878,7 +6877,6 @@
 
 /* line 1321, ../scss/_common.scss */
 .portfolio-produts-title h4 {
-  font-family: 'IvyMode', sans-serif;
   color: #fff;
   font-size: 29px;
   font-weight: 500;

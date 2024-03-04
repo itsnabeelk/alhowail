@@ -9571,6 +9571,7 @@ Blog Two CSS
   padding: 17px 40px 40px 40px;
   background: var(--bg-white);
   box-shadow: var(--box-shadow-1);
+  height: 200px;
 }
 .blog__two-item-content-meta {
   border-bottom: 1px solid var(--color-10);
