@@ -184,7 +184,20 @@ a {
   font-size: 18px;
   margin-bottom: 25px;
 }
+#banner {
+  position: relative;
+  width: 100%;
+  height: 1005;
+}
 
+#banner-video {
+  width: 100%;
+  height: 100%;
+}
+
+#banner-video:focus {
+  outline: none;
+}
 .banner-content a {
   position: relative;
   background: #0201fc;
@@ -1449,4 +1462,30 @@ footer .d-flex {
 }
 .counter-container {
   margin-bottom: 15px;
+}
+
+
+@media (max-width:1580px) {
+  .carousel-indicators {
+    margin-right: 15%;
+    margin-left: 12%;
+}
+}
+
+@media (max-width:1380px) {
+  .carousel-indicators {
+    margin-right: 15%;
+    margin-left: 7%;
+}
+}
+@media (max-width:1200px) {
+  .carousel-indicators {
+    margin-right: 15%;
+    margin-left: 45px;
+}
+}
+@media (max-width:991px) {
+  .carousel-indicators {
+display:none;
+}
 }

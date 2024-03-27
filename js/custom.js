@@ -158,3 +158,14 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+
+var bannerVideo = document.getElementById('banner-video');
+
+bannerVideo.addEventListener('click', function() {
+  if (bannerVideo.paused) {
+    bannerVideo.play();
+  } else {
+    bannerVideo.pause();
+  }
+});
