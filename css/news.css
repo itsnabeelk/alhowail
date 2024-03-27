@@ -5275,7 +5275,7 @@
   font-size: 24px;
   font-weight: 400;
   color: var(--tp-heading-primary);
-  font-family: var(--tp-ff-heading);
+  font-family: 'barmenoregular';
   line-height: 35px;
   transition: 0.3s;
   overflow: hidden;
@@ -6192,7 +6192,7 @@
 }
 .search__result-tags a {
   display: inline-block;
-  font-family: var(--tp-ff-space);
+  font-family: 'barmenoregular';
   font-size: 13px;
   font-weight: 500;
   border: 1px solid #D5D5DD;
@@ -6267,7 +6267,7 @@
 .search__blog-tag a {
   display: inline-block;
   background-color: rgba(99, 100, 219, 0.06);
-  font-family: var(--tp-ff-space);
+  font-family: 'barmenoregular';
   font-weight: 500;
   font-size: 15px;
   line-height: 1;
@@ -6325,7 +6325,7 @@
 }
 .search__blog-meta-author-content span {
   display: inline-block;
-  font-family: var(--tp-ff-inter);
+  font-family: 'barmenoregular';
   font-size: 14px;
   color: #7A7E83;
 }
@@ -6649,7 +6649,7 @@
   font-size: 18px;
   color: #283734;
   font-weight: 400;
-  font-family: var(--tp-ff-heading);
+  font-family: 'barmenoregular';
 }
 .contact__info ul li a i {
   margin-right: 20px;

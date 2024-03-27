@@ -3216,11 +3216,6 @@ a.btn-play i {
     transform: translate3d(0px, 0px, 0px);
 }
 
-@media (max-width: 575px) {
-    .home-piling .container {
-        padding-right: 45px;
-    }
-}
 
 
 #pp-nav.right {
@@ -9517,7 +9512,7 @@ a.phone-link {
 
 .article-promo h1 .text-primary {
     font-weight: 700;
-    font-size: 60PX;
+    font-size: 60px;
     color: #ffb71b !important;
     text-transform: uppercase;
 }
@@ -9731,7 +9726,7 @@ a.phone-link {
     display: block;
     font-size: 60px;
     padding-top: 15px;
-    font-family: 'Next Arabic Medium', sans-serif;
+    font-family: 'barmenoregular';
     color: rgba(244, 141, 35, 1);
     margin-left: -5px;
 }
@@ -9748,7 +9743,8 @@ a.phone-link {
 }
 
 .strategycontent.content-inner1 {
-    padding: 60px 0 60px 80px;
+    padding-left: 15px;
+    padding-top: 25px;
 }
 
 .strategycontent.content-inner2 {
@@ -9756,8 +9752,8 @@ a.phone-link {
 }
 
 .strategycontent h3 {
-    font-size: 2.5rem;
-    line-height: 75px;
+    font-size: 25px;
+    line-height: 40px;
     color: #0f2d52;
     display: block;
     margin-bottom: 30px;
@@ -9781,9 +9777,8 @@ a.phone-link {
 }
 
 .strategycontent p {
-    font-size: 1.25rem;
-    letter-spacing: -0.5px;
-    line-height: 2rem;
+    font-size: 14px;
+    letter-spacing: normal;
     font-weight: 300;
 }
 

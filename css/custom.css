@@ -1,6 +1,6 @@
 
 body {
-  font-family: var(--body-font);
+  font-family: 'barmenoregular';
   color: var(--body-color);
   font-size: 16px;
   line-height: 26px;
@@ -37,11 +37,7 @@ a:hover {
   padding: 120px 0px;
 }
 
-@media (max-width: 575px) {
-  .section-padding {
-    padding: 85px 0px;
-  }
-}
+
 .display-none {
   display: none;
 }
@@ -165,7 +161,7 @@ h1 {
   padding: 0;
   margin: 0;
   color: var(--text-heading-color);
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 700;
 }
 
@@ -175,7 +171,7 @@ h2 {
   padding: 0;
   margin: 0;
   color: var(--text-heading-color);
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 700;
 }
 
@@ -185,7 +181,7 @@ h3 {
   padding: 0;
   margin: 0;
   color: var(--text-heading-color);
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 700;
 }
 
@@ -195,7 +191,7 @@ h4 {
   padding: 0;
   margin: 0;
   color: var(--text-heading-color);
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 700;
 }
 
@@ -205,7 +201,7 @@ h5 {
   padding: 0;
   margin: 0;
   color: var(--text-heading-color);
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 700;
 }
 
@@ -215,7 +211,7 @@ h6 {
   padding: 0;
   margin: 0;
   color: var(--text-heading-color);
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 700;
 }
 
@@ -290,7 +286,7 @@ Conbix Button And Title Styles CSS
 .subtitle-three {
   position: relative;
   text-transform: uppercase;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   color: var(--primary-color-1);
   font-weight: 700;
   font-size: 16px;
@@ -360,7 +356,7 @@ Conbix Button And Title Styles CSS
   padding: 17px 43px;
   text-align: center;
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   z-index: 3;
   position: relative;
   transition: 0.4s;
@@ -549,7 +545,7 @@ Conbix Button And Title Styles CSS
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   transition: 0.4s;
   text-transform: uppercase;
 }
@@ -589,7 +585,7 @@ Conbix Button And Title Styles CSS
 Conbix Text Style CSS
 ==========================================================================*/
 .text-one {
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -597,7 +593,7 @@ Conbix Text Style CSS
   color: var(--text-heading-color);
 }
 .text-two {
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
@@ -605,7 +601,7 @@ Conbix Text Style CSS
   color: var(--text-heading-color);
 }
 .text-three {
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
@@ -613,7 +609,7 @@ Conbix Text Style CSS
   color: var(--text-heading-color);
 }
 .text-four {
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -621,7 +617,7 @@ Conbix Text Style CSS
   color: var(--text-heading-color);
 }
 .text-five {
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
@@ -3611,7 +3607,7 @@ Menu Bar CSS
   transition: all 0.4s ease-out 0s;
   text-transform: uppercase;
   padding: 43px 32px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
 }
 .header__area-menubar-center-menu ul li.menu-item-has-children > a {
   position: relative;
@@ -4149,7 +4145,7 @@ Responsive Menu Css
   color: var(--text-heading-color);
   font-size: 16px;
   line-height: 26px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 600;
   text-transform: capitalize;
   border-top: 1px solid var(--border-color-2);
@@ -4492,7 +4488,7 @@ Banner One CSS
   max-width: 740px;
 }
 .banner__one-content span {
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   display: block;
   color: var(--primary-color-1);
   font-weight: 700;
@@ -4622,7 +4618,7 @@ Banner Two CSS
   font-weight: 700;
   font-size: 250px;
   line-height: 200px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-style: normal;
   opacity: 0.2;
   color: var(--text-white);
@@ -4635,7 +4631,7 @@ Banner Two CSS
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   margin-bottom: 15px;
   display: inline-block;
 }
@@ -4709,7 +4705,7 @@ Banner Three CSS
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   display: block;
   margin-bottom: 8px;
 }
@@ -5140,7 +5136,7 @@ About One CSS
 .about__one-right-bottom-list span {
   display: block;
   font-weight: 600;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   margin-bottom: 10px;
 }
 .about__one-right-bottom-list span:last-child {
@@ -5952,7 +5948,7 @@ Consulting CSS
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   margin-bottom: 20px;
 }
 .consulting__area-right-list span i {
@@ -5991,7 +5987,7 @@ Work CSS
   -webkit-text-stroke-width: 0.8px;
   font-weight: 700;
   font-size: 48px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   width: 100px;
   height: 100px;
   line-height: 100px;
@@ -7104,7 +7100,7 @@ Pricing Two CSS
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   margin-bottom: 5px;
   display: inline-block;
 }
@@ -7155,7 +7151,7 @@ Pricing Two CSS
   font-size: 14px;
   line-height: 50px;
   text-transform: capitalize;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   padding: 0 30px;
   margin: 0 10px;
   color: var(--text-heading-color);
@@ -7650,7 +7646,7 @@ Team Details CSS
 }
 .team__details-experience-area-item p {
   font-size: 16px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 600;
 }
 .team__details-experience-area-item p span {
@@ -8446,7 +8442,7 @@ Portfolio Three CSS
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   color: var(--text-white);
   transition: 0.4s;
   opacity: 0;
@@ -8574,7 +8570,7 @@ Project Filter CSS
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   color: var(--primary-color-1);
   display: block;
   margin-bottom: 5px;
@@ -9235,7 +9231,7 @@ Subscribe One CSS
   border-radius: 35px;
   background: var(--primary-color-2);
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   height: 70px;
   padding-left: 46px;
   padding-right: 46px;
@@ -9291,7 +9287,7 @@ Subscribe Two CSS
   background: var(--primary-color-3);
   font-weight: 700;
   font-size: 16px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   padding: 17px 20px;
   border-radius: 4px;
 }
@@ -9445,7 +9441,7 @@ Blog One CSS
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
 }
 .blog__one-item-content-meta ul li:last-child {
   margin: 0;
@@ -9593,7 +9589,7 @@ Blog Two CSS
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
 }
 .blog__two-item-content-meta ul li:last-child {
   margin: 0;
@@ -9732,7 +9728,7 @@ Blog Three CSS
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
 }
 .blog__three-item-content-meta ul li:last-child {
   margin: 0;
@@ -9808,7 +9804,7 @@ News Details CSS
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
 }
 .news__details-left-meta ul li:last-child {
   margin: 0;
@@ -9892,7 +9888,7 @@ News Details CSS
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
 }
 .news__details-left-tag h6 {
   font-size: 18px;
@@ -9991,7 +9987,7 @@ News Details CSS
 .news__details-left-comment-item-comment-content h6 a {
   float: right;
   transition: 0.4s;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -10355,7 +10351,7 @@ Contact Two CSS
   max-width: 45px;
 }
 .contact__two-left-item-info span {
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -11108,7 +11104,7 @@ Footer Three CSS
 }
 .footer__three-widget-hour p {
   font-weight: 500;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   margin-bottom: 7px;
 }
 .footer__three-widget-hour p:last-child {
@@ -11562,7 +11558,7 @@ Theme Pagination CSS
   border-color: var(--primary-color-1);
 }
 .theme__pagination ul li a {
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
   border: 1px solid var(--border-color-1);
   display: block;
   height: 50px;
@@ -11742,7 +11738,7 @@ Page Banner CSS
   position: relative;
   z-index: -1;
   text-transform: uppercase;
-  font-family: var(--heading-font);
+  font-family: 'barmenoregular';
 }
 
 /*==========================================================================

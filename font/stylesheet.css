@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'barmenoregular';
+    src: url('barmeno_extra_bold_400.woff2') format('woff2'),
+         url('barmeno_extra_bold_400.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'barmenobold';
+    src: url('barmeno-bold_700.woff2') format('woff2'),
+         url('barmeno-bold_700.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'barmenomedium';
+    src: url('barmeno-medium_500.woff2') format('woff2'),
+         url('barmeno-medium_500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'barmenoregular';
+    src: url('barmeno-regular_500.woff2') format('woff2'),
+         url('barmeno-regular_500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
