@@ -159,7 +159,7 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-
+// video-script-banner
 var bannerVideo = document.getElementById('banner-video');
 
 bannerVideo.addEventListener('click', function() {
