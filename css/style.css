@@ -1306,6 +1306,10 @@ p {
 }
 
 @media (max-width:680px) {
+  .about__company {
+    position: relative;
+    margin-top: 50px;
+  }
   .about-sec h1 {
     font-size: 35px;
     line-height: 45px;
@@ -1491,5 +1495,26 @@ footer .d-flex {
 @media (max-width:991px) {
   .carousel-indicators {
 display:none;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .slick-initialized .slick-slide {
+    display: contents !important;
+}
+.slick-prev, .slick-next {
+  display: none !important;
+}
+.timeline-carousel__image {
+  padding-right: 0 !important;
+}
+.slick-track {
+  display: contents !important;
+}
+.timeline-carousel__item {
+  margin-bottom: 35px;
+}
+.timeline-carousel__item .media-wrapper {
+  opacity: 1;
 }
 }

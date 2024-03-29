@@ -94,10 +94,7 @@ html, body {
     cursor: pointer;
     text-decoration: none;
 }
-#pp-nav li .active span,
-.pp-slidesNav .active span {
-    /*background: #333;*/
-}
+
 #pp-nav span,
 .pp-slidesNav span {
     top: 2px;

@@ -5152,6 +5152,7 @@
 /*----------------------------------------*/
 .tpblog {
   position: relative;
+  margin-bottom: 35px;
 }
 .tpblog__catagori {
   position: absolute;
@@ -5203,7 +5204,7 @@
 }
 .tpblog__thumb {
   position: relative;
-  height: 230px;
+  height: auto;
   overflow: hidden;
 }
 .tpblog__thumb img {
