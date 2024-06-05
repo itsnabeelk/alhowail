@@ -6,18 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alhowail</title>
   <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
-  <!-- css-start -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="css/jquery.pagepiling.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/all.css">
-  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/news.css">
-  <!---fonts -->
   <link rel="stylesheet" href="font/stylesheet.css">
-  <!-- css-close -->
   <style>
     body {
       overflow: auto;
@@ -31,14 +27,14 @@
     <div class="wrapper parallax-start">
 
 
-      <!-- header-start -->
-      <nav class="navbar navbar-light fixed-top bg--transparent">
+       <!-- header-start -->
+       <nav class="navbar navbar-light fixed-top bg--transparent">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.svg" alt="" width="60%">
           </a>
           <div class="humb-menu">
-            <a href="" class="text-white">EN</a>
+            <!-- <a href="" class="text-white">EN</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
               aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon"></span>
@@ -78,10 +74,10 @@
                     Sectors <i class="fas fa-plus"></i>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="sectorsDropdown">
-                    <li><a class="dropdown-item" href="#">Services</a></li>
-                    <li><a class="dropdown-item" href="#">Trading</a></li>
-                    <li><a class="dropdown-item" href="#">Manufacturing </a></li>
-                    <li><a class="dropdown-item" href="#">Real Estate & Contracting </a></li>
+                    <li><a class="dropdown-item" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item" href="service2.html">Trading</a></li>
+                    <li><a class="dropdown-item" href="service3.html">Manufacturing </a></li>
+                    <li><a class="dropdown-item" href="service4.html">Real Estate & Contracting </a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -257,48 +253,39 @@
   </div>
 
 
-  <!-- js-start -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.pagepiling.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/lottie-player.js"></script>
-  <script src="js/custom.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.carousel').carousel({
-        interval: 5000,
-        pause: 'hover'
+    <!-- js-start -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.pagepiling.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lottie-player.js"></script>
+    <script src="js/custom.js"></script>
+  
+    <script>
+      const counters = document.querySelectorAll(".counter");
+      counters.forEach((counter) => {
+        counter.innerText = "0";
+        const updateCounter = () => {
+          const target = Number(counter.getAttribute("data-target"));
+          const c = Number(counter.innerText);
+          const increment = target / 10000;
+  
+          if (c < target) {
+            counter.innerText = `${Math.ceil(c + increment)}`;
+            setTimeout(updateCounter, 100);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCounter();
       });
-    });
-  </script>
-  <script>
-    const counters = document.querySelectorAll(".counter");
-    counters.forEach((counter) => {
-      counter.innerText = "0";
-      const updateCounter = () => {
-        const target = Number(counter.getAttribute("data-target"));
-        const c = Number(counter.innerText);
-        const increment = target / 10000;
-
-        if (c < target) {
-          counter.innerText = `${Math.ceil(c + increment)}`;
-          setTimeout(updateCounter, 100);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCounter();
-    });
-  </script>
-  <script>
-    var counter = $('.counter2');
-    counter.counterUp({
-      time: 2500,
-      delay: 100
-    });
-  </script>
-</body>
-
-</html>
+    </script>
+    <script>
+      var counter = $('.counter2');
+      counter.counterUp({
+        time: 2500,
+        delay: 100
+      });
+    </script>
+  </body>
+  </html>

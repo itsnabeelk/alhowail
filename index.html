@@ -6,18 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alhowail</title>
   <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
-  <!-- css-start -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="css/jquery.pagepiling.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/all.css">
-  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/news.css">
-  <!---fonts -->
   <link rel="stylesheet" href="font/stylesheet.css">
-  <!-- css-close -->
   <style>
     body {
       overflow: auto;
@@ -28,73 +24,75 @@
 <body class="theme-yellow homepage dark-horizontal">
   <div class="wrapper">
 
-    <!-- header-start -->
-    <nav class="navbar navbar-light fixed-top bg--transparent">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo.svg" alt="" width="60%">
-        </a>
-        <div class="humb-menu">
-          <a href="" class="text-white">EN</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/logo.svg" alt="" width="40%">
-              </a>
-            </h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <!-- header-start -->
+      <nav class="navbar navbar-light fixed-top bg--transparent">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" alt="" width="60%">
+          </a>
+          <div class="humb-menu">
+            <!-- <a href="" class="text-white">EN</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/logo.svg" alt="" width="40%">
+                </a>
+              </h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
 
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active drop-menu" href="#" id="sectorsDropdown2" role="button" aria-haspopup="true"
-                  aria-expanded="false">
-                  Who We Are <i class="fas fa-plus"></i>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="sectorsDropdown2">
-                  <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                  <li><a class="dropdown-item" href="about.html">Founder Message</a></li>
-                  <li><a class="dropdown-item" href="about.html">Vice President Message</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active drop-menu" href="#" id="sectorsDropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">
-                  Sectors <i class="fas fa-plus"></i>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="sectorsDropdown">
-                  <li><a class="dropdown-item" href="#">Services</a></li>
-                  <li><a class="dropdown-item" href="#">Trading</a></li>
-                  <li><a class="dropdown-item" href="#">Manufacturing </a></li>
-                  <li><a class="dropdown-item" href="#">Real Estate & Contracting </a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="news.html">News & Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="career.html">Career</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown2" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Who We Are <i class="fas fa-plus"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown2">
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="about.html">Founder Message</a></li>
+                    <li><a class="dropdown-item" href="about.html">Vice President Message</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Sectors <i class="fas fa-plus"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown">
+                    <li><a class="dropdown-item" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item" href="service2.html">Trading</a></li>
+                    <li><a class="dropdown-item" href="service3.html">Manufacturing </a></li>
+                    <li><a class="dropdown-item" href="service4.html">Real Estate & Contracting </a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="news.html">News & Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="career.html">Career</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
           </div>
-
         </div>
-      </div>
-    </nav>
-    <!-- header-close -->
+      </nav>
+      <!-- header-close -->
 
     <div class="home-piling pagepiling a-pagepiling full-height">
       <!--Section 1-->
@@ -379,145 +377,7 @@
       <!-- section4 -->
       <div class="section pp-scrollable slide slide4 section-timeline">
         <div class="slide-container">
-          <div class="timeline-carousel">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 text-center mb-5">
-                  <h1>OUR TIMELINE</h1>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
-              <!--Timeline item-->
-              <div class="timeline-carousel__item">
-                <div class="timeline-carousel__image">
-                  <div class="media-wrapper media-wrapper--overlay"
-                    style="background: url('images/services/1.jpg') center center; background-size:cover;">
-                  </div>
-                </div>
-                <div class="timeline-carousel__item-inner">
-                  <span class="year">1969</span>
-                  <p>Al Howail started as a Contracting Company. </p>
-                </div>
-              </div>
-              <!--/Timeline item-->
 
-              <!--Timeline item-->
-              <div class="timeline-carousel__item">
-                <div class="timeline-carousel__image">
-                  <div class="media-wrapper media-wrapper--overlay"
-                    style="background: url('images/services/2.jpg') center center; background-size:cover;">
-                  </div>
-                </div>
-                <div class="timeline-carousel__item-inner">
-                  <span class="year">1984</span>
-                  <p>With contracting they started Tyre rethreading </p>
-                </div>
-              </div>
-              <!--/Timeline item-->
-
-              <!--Timeline item-->
-              <div class="timeline-carousel__item">
-                <div class="timeline-carousel__image">
-                  <div class="media-wrapper media-wrapper--overlay"
-                    style="background: url('images/services/3.jpg') center center; background-size:cover;">
-                  </div>
-                </div>
-                <div class="timeline-carousel__item-inner">
-                  <span class="year">1986</span>
-                  <p>This was the year when Al howail started venturing in Trading business and started their Tyres
-                    sales </p>
-                </div>
-              </div>
-              <!--/Timeline item-->
-
-              <!--Timeline item-->
-              <div class="timeline-carousel__item">
-                <div class="timeline-carousel__image">
-                  <div class="media-wrapper media-wrapper--overlay"
-                    style="background: url('images/services/4.jpg') center center; background-size:cover;">
-                  </div>
-                </div>
-                <div class="timeline-carousel__item-inner">
-                  <span class="year">2005</span>
-                  <p>Based on the business expansion in Contracting & Trading, Al Howail started their own
-                    Transportation company. </p>
-                </div>
-              </div>
-              <!--/Timeline item-->
-
-              <!--Timeline item-->
-              <div class="timeline-carousel__item">
-                <div class="timeline-carousel__image">
-                  <div class="media-wrapper media-wrapper--overlay"
-                    style="background: url('images/services/4.jpg') center center; background-size:cover;">
-                  </div>
-                </div>
-                <div class="timeline-carousel__item-inner">
-                  <span class="year">2007</span>
-                  <p>From 2007 Al howail started manufactiring business and started Rubber factory & Wood factory</p>
-                </div>
-              </div>
-              <!--/Timeline item-->
-
-              <!--Timeline item-->
-              <div class="timeline-carousel__item">
-                <div class="timeline-carousel__image">
-                  <div class="media-wrapper media-wrapper--overlay"
-                    style="background: url('images/services/4.jpg') center center; background-size:cover;">
-                  </div>
-                </div>
-                <div class="timeline-carousel__item-inner">
-                  <span class="year">2008</span>
-                  <p>Founded plastics factory </p>
-                </div>
-              </div>
-              <!--/Timeline item-->
-
-              <!--Timeline item-->
-              <div class="timeline-carousel__item">
-                <div class="timeline-carousel__image">
-                  <div class="media-wrapper media-wrapper--overlay"
-                    style="background: url('images/services/4.jpg') center center; background-size:cover;">
-                  </div>
-                </div>
-                <div class="timeline-carousel__item-inner">
-                  <span class="year">2013</span>
-                  <p>Founded Glass factory</p>
-                </div>
-              </div>
-              <!--/Timeline item-->
-
-              <!--Timeline item-->
-              <div class="timeline-carousel__item">
-                <div class="timeline-carousel__image">
-                  <div class="media-wrapper media-wrapper--overlay"
-                    style="background: url('images/services/4.jpg') center center; background-size:cover;">
-                  </div>
-                </div>
-                <div class="timeline-carousel__item-inner">
-                  <span class="year">2015</span>
-                  <p>Founded Kingdom Wood</p>
-                </div>
-              </div>
-              <!--/Timeline item-->
-
-              <!--Timeline item-->
-              <div class="timeline-carousel__item">
-                <div class="timeline-carousel__image">
-                  <div class="media-wrapper media-wrapper--overlay"
-                    style="background: url('images/services/4.jpg') center center; background-size:cover;">
-                  </div>
-                </div>
-                <div class="timeline-carousel__item-inner">
-                  <span class="year">2017</span>
-                  <p>Founded Aluminum factory</p>
-                </div>
-              </div>
-              <!--/Timeline item-->
-
-            </div>
-          </div>
         </div>
         <div class="container-fluid">
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -547,19 +407,10 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.pagepiling.min.js"></script>
   <script src="js/popper.min.js"></script>
-  <script src="js/slick.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/lottie-player.js"></script>
   <script src="js/custom.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      $('.carousel').carousel({
-        interval: 5000,
-        pause: 'hover'
-      });
-    });
-  </script>
   <script>
     const counters = document.querySelectorAll(".counter");
     counters.forEach((counter) => {
@@ -587,5 +438,4 @@
     });
   </script>
 </body>
-
 </html>

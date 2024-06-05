@@ -1547,3 +1547,133 @@ display:none;
   opacity: 1;
 }
 }
+
+
+/* service-sec */
+.service-descr {
+  position: relative;
+  margin: 25px 0;
+  padding-bottom: 100px;
+}
+.service-descr h1{
+  font-size: 30px;
+}
+/* close */
+
+/* chairman */
+.chairman-main {
+  position: relative;
+  padding: 125px 0;
+  background: #f7f7f7;
+}
+.chairman-message{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.chairman-message .content-container{
+ position: relative;
+ width: 50%;
+}
+.chairman-message .content-container h1 {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 700;
+  color: #000;
+  line-height: normal;
+}
+.chairman-message .content-container p {
+  font-size: 16px;
+  margin: 25px 0;
+  font-weight: 500;
+  color: #000;
+  line-height: normal;
+}
+.chairman-message .image-container {
+  position: relative;
+  width: 50%;
+}
+.chairman-message .image-container img{
+ width: 100%;
+}
+.chairman-message .content-container label {
+  color: #0202fc;
+}
+/* close */
+/* president */
+.president-main {
+  position: relative;
+  padding: 125px 0;
+}
+.president-message{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.president-message .content-container{
+ position: relative;
+ width: 50%;
+}
+.president-message .content-container h1 {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 700;
+  color: #000;
+  line-height: normal;
+}
+.president-message .content-container p {
+  font-size: 16px;
+  margin: 25px 0;
+  font-weight: 500;
+  color: #000;
+  line-height: normal;
+}
+.president-message .content-container label {
+  color: #0202fc;
+}
+.president-message .image-container {
+  position: relative;
+  width: 50%;
+}
+.president-message .image-container img{
+ width: 100%;
+}
+/* close */
+
+
+@media (max-width:1080px) {
+  .president-message {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+    .chairman-message {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+    .chairman-message .content-container {
+      width: 100%;
+    }
+    .president-message .content-container {
+      position: relative;
+      width: 100%;
+    }
+    .chairman-message .image-container {
+      position: relative;
+      width: 100%;
+    }
+    .president-message .image-container {
+      position: relative;
+      width: 100%;
+    }
+    .fixed-top {
+      background: #191717;
+  }
+}

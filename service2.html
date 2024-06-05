@@ -107,7 +107,7 @@
                     <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s"
                       data-wow-delay="0.3s"
                       style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                      <span class="text-primary">Services</span>
+                      <span class="text-primary">Trading</span>
                     </h1>
                   </div>
                 </div>
@@ -129,7 +129,7 @@
                   <ul class="clearfix">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sectors.html">Sectors</a></li>
-                    <li class="active">Services</li>
+                    <li class="active">Trading</li>
                   </ul>
                 </div>
               </div>
@@ -146,13 +146,17 @@
           <div class="col-lg-12">
            
             <div class="service-descr">
-              <h1>Services</h1>
+              <h1>Trading</h1>
               <p>
-                We aim to emerge as the torchbearers in the logistics industry. Our vision is to establish Al Howail transportation
-                as the most grounded worldwide logistics and supply chain management company as a trusted partner to all our
-                clients. We envision surpassing our success & customer loyalty levels year by year.
-                To promote teamwork & create a work environment encouraging the workforce to continuously strive for quality &
-                excellence, providing high-quality service to customers under one roof.
+                We Take Pride In Serving Our Customers Safely.
+                Welcome to Al Howail, your premier destination for top- Quality sales and services in Kingdom! At Al Howail, we take great pride in offering a wide range of premium brands along with exceptional customer service to meet all your automotive needs.
+                As a leading specialist, we understand the importance of quality products in ensuring a safe and comfortable experience. That's why we have carefully curated a collection of the finest brands from around the world. Whether you're looking for high-quality, all-season products, or specialized products for specific season, our extensive inventory has you covered. Our team of experts is always ready to provide personalized recommendations based on your type, preferences, and budget, ensuring that you find the perfect product that suit your needs.
+                we also provide comprehensive services to keep your environment performing at its best. Our skilled technicians are equipped with state-of-the-art tools and possess the expertise to handle installations with precision and efficiency. We understand that your time is valuable, so we strive to complete our services promptly while maintaining the highest standards of quality.
+                At Al Howail, we prioritize customer satisfaction above all else. Our friendly and knowledgeable staff is always ready to assist you, whether you have questions about maintenance, need assistance in choosing the right product, or require professional advice on product care. We believe in building long-term relationships with our customers, and our commitment to exceptional service ensures that you have a positive and stress-free experience every time you visit our Showroom.
+                Convenience is another aspect we value at Al Howail., our easily accessible store welcomes both walk-in customers and appointments, allowing you to get your product serviced at your convenience. With our efficient processes and attention to detail, we strive to exceed your expectations and become your trusted partner for all your needs.
+                When you choose Al Howail, you can rest assured that you are receiving top-notch quality products and services. We go above and beyond to deliver excellence in everything we do, ensuring that your experience with us is smooth, and reliable. Trust the experts and choose Al Howail for all your needs in Kingdom.
+                Contact us today or visit our store to experience the Al Howail difference. Let us help you find the perfect product and provide you with unmatched services to keep you on the frontline with confidence. Your journey starts with us!
+                
               </p>
             </div>
 
@@ -242,40 +246,39 @@
     </div>
   </div>
 
+  <!-- js-start -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.pagepiling.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lottie-player.js"></script>
+  <script src="js/custom.js"></script>
 
-    <!-- js-start -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.pagepiling.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/lottie-player.js"></script>
-    <script src="js/custom.js"></script>
-  
-    <script>
-      const counters = document.querySelectorAll(".counter");
-      counters.forEach((counter) => {
-        counter.innerText = "0";
-        const updateCounter = () => {
-          const target = Number(counter.getAttribute("data-target"));
-          const c = Number(counter.innerText);
-          const increment = target / 10000;
-  
-          if (c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`;
-            setTimeout(updateCounter, 100);
-          } else {
-            counter.innerText = target;
-          }
-        };
-        updateCounter();
-      });
-    </script>
-    <script>
-      var counter = $('.counter2');
-      counter.counterUp({
-        time: 2500,
-        delay: 100
-      });
-    </script>
-  </body>
-  </html>
+  <script>
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach((counter) => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = Number(counter.getAttribute("data-target"));
+        const c = Number(counter.innerText);
+        const increment = target / 10000;
+
+        if (c < target) {
+          counter.innerText = `${Math.ceil(c + increment)}`;
+          setTimeout(updateCounter, 100);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  </script>
+  <script>
+    var counter = $('.counter2');
+    counter.counterUp({
+      time: 2500,
+      delay: 100
+    });
+  </script>
+</body>
+</html>

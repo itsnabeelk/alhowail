@@ -107,7 +107,7 @@
                     <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s"
                       data-wow-delay="0.3s"
                       style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                      <span class="text-primary">Services</span>
+                      <span class="text-primary">Real Estate & Contracting</span>
                     </h1>
                   </div>
                 </div>
@@ -129,7 +129,7 @@
                   <ul class="clearfix">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sectors.html">Sectors</a></li>
-                    <li class="active">Services</li>
+                    <li class="active">Real Estate & Contracting</li>
                   </ul>
                 </div>
               </div>
@@ -146,13 +146,12 @@
           <div class="col-lg-12">
            
             <div class="service-descr">
-              <h1>Services</h1>
+              <h1>Real Estate & Contracting</h1>
               <p>
-                We aim to emerge as the torchbearers in the logistics industry. Our vision is to establish Al Howail transportation
-                as the most grounded worldwide logistics and supply chain management company as a trusted partner to all our
-                clients. We envision surpassing our success & customer loyalty levels year by year.
-                To promote teamwork & create a work environment encouraging the workforce to continuously strive for quality &
-                excellence, providing high-quality service to customers under one roof.
+                With a rich legacy of trust spanning four decades, at Al Howail, we are driven by our passion to exceed global standards and deliver iconic addresses. We go to extraordinary lengths, from carefully restoring heritage buildings to sourcing the best minds in architecture and design. Our iconic developments offer unmatched amenities, state-of-the-art infrastructure and unparalleled services that perfectly orchestrate a celebration of life’s finest moments.
+                Whether it’s crafting the world’s most luxurious residences or giving Kingdom its most iconic address; adding a glittering icon to UAE skyline or creating designer residences for Kingdom glitterati; delivering meticulously designed offices or conceiving Kingdom smart city with the highest livability quotient – Al Howail has been transforming the way we live with the world’s finest developments.
+                Our passion is to create landmarks that meet the highest global standards, epitomise the values of our family, and are built on a legacy of trust spanning 4 decades. Guided with our vision of ‘Building a Better Life’, we stop at nothing to do whatever it takes to create the world’s finest developments. 
+                
               </p>
             </div>
 
@@ -242,40 +241,39 @@
     </div>
   </div>
 
+  <!-- js-start -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.pagepiling.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lottie-player.js"></script>
+  <script src="js/custom.js"></script>
 
-    <!-- js-start -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.pagepiling.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/lottie-player.js"></script>
-    <script src="js/custom.js"></script>
-  
-    <script>
-      const counters = document.querySelectorAll(".counter");
-      counters.forEach((counter) => {
-        counter.innerText = "0";
-        const updateCounter = () => {
-          const target = Number(counter.getAttribute("data-target"));
-          const c = Number(counter.innerText);
-          const increment = target / 10000;
-  
-          if (c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`;
-            setTimeout(updateCounter, 100);
-          } else {
-            counter.innerText = target;
-          }
-        };
-        updateCounter();
-      });
-    </script>
-    <script>
-      var counter = $('.counter2');
-      counter.counterUp({
-        time: 2500,
-        delay: 100
-      });
-    </script>
-  </body>
-  </html>
+  <script>
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach((counter) => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = Number(counter.getAttribute("data-target"));
+        const c = Number(counter.innerText);
+        const increment = target / 10000;
+
+        if (c < target) {
+          counter.innerText = `${Math.ceil(c + increment)}`;
+          setTimeout(updateCounter, 100);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  </script>
+  <script>
+    var counter = $('.counter2');
+    counter.counterUp({
+      time: 2500,
+      delay: 100
+    });
+  </script>
+</body>
+</html>
