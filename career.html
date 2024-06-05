@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/news.css">
-    <!---fonts -->
-    <link rel="stylesheet" href="font/stylesheet.css">
-    <!-- css-close -->
+  <!---fonts -->
+  <link rel="stylesheet" href="font/stylesheet.css">
+  <!-- css-close -->
   <style>
     body {
       overflow: auto;
@@ -28,8 +28,9 @@
 <body class="theme-yellow homepage dark-horizontal">
   <div class="animsition" style="animation-duration: 1500ms; opacity: 1;">
     <div class="wrapper parallax-start">
+
       <!-- header-start -->
-      <nav class="navbar navbar-light fixed-top bg--transparent" id="navbar">
+      <nav class="navbar navbar-light fixed-top bg--transparent">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.svg" alt="" width="60%">
@@ -52,18 +53,34 @@
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
+
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="about.html">
-                    Who We Are
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown2" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Who We Are <i class="fas fa-plus"></i>
                   </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown2">
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="about.html">Founder Message</a></li>
+                    <li><a class="dropdown-item" href="about.html">Vice President Message</a></li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="sectors.html">Sectors</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Sectors <i class="fas fa-plus"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown">
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="#">Trading</a></li>
+                    <li><a class="dropdown-item" href="#">Manufacturing </a></li>
+                    <li><a class="dropdown-item" href="#">Real Estate & Contracting </a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="news.html">News & Events</a>
@@ -76,6 +93,7 @@
                 </li>
               </ul>
             </div>
+
           </div>
         </div>
       </nav>
@@ -241,13 +259,15 @@
                 <input type="email" placeholder="Years of Experience" oninput="this.className = ''" name="email">
               </div>
               <div class="mb-3 col-lg-6">
-                <input type="email" placeholder="Previous Company Name & Country" oninput="this.className = ''" name="email">
+                <input type="email" placeholder="Previous Company Name & Country" oninput="this.className = ''"
+                  name="email">
               </div>
               <div class="mb-3 col-lg-6">
                 <input type="email" placeholder="Type of Business " oninput="this.className = ''" name="email">
               </div>
               <div class="mb-3 col-lg-6">
-                <input type="email" placeholder="Direct Manager Mobile /Telephone" oninput="this.className = ''" name="email">
+                <input type="email" placeholder="Direct Manager Mobile /Telephone" oninput="this.className = ''"
+                  name="email">
               </div>
             </div>
           </div>
@@ -281,7 +301,8 @@
                   placeholder="Type Here.."></textarea>
               </div>
               <div class="mb-3 col-lg-6">
-                <input type="email" placeholder="Required Salary(Total Package in SR / USD)" oninput="this.className = ''" name="email">
+                <input type="email" placeholder="Required Salary(Total Package in SR / USD)"
+                  oninput="this.className = ''" name="email">
               </div>
             </div>
           </div>

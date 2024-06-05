@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/news.css">
-    <!---fonts -->
-    <link rel="stylesheet" href="font/stylesheet.css">
-    <!-- css-close -->
+  <!---fonts -->
+  <link rel="stylesheet" href="font/stylesheet.css">
+  <!-- css-close -->
   <style>
     body {
       overflow: auto;
@@ -28,11 +28,12 @@
 <body class="theme-yellow homepage dark-horizontal">
   <div class="animsition" style="animation-duration: 1500ms; opacity: 1;">
     <div class="wrapper parallax-start">
+
       <!-- header-start -->
       <nav class="navbar navbar-light fixed-top bg--transparent">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.svg" alt="" width="60%">
+            <img src="images/logo.svg" alt="" width="60%">
           </a>
           <div class="humb-menu">
             <a href="" class="text-white">EN</a>
@@ -46,24 +47,40 @@
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 <a class="navbar-brand" href="index.html">
-                          <img src="images/logo.svg" alt="" width="40%">
+                  <img src="images/logo.svg" alt="" width="40%">
                 </a>
               </h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
+
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="about.html">
-                    Who We Are
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown2" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Who We Are <i class="fas fa-plus"></i>
                   </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown2">
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="about.html">Founder Message</a></li>
+                    <li><a class="dropdown-item" href="about.html">Vice President Message</a></li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="sectors.html">Sectors</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Sectors <i class="fas fa-plus"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown">
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="#">Trading</a></li>
+                    <li><a class="dropdown-item" href="#">Manufacturing </a></li>
+                    <li><a class="dropdown-item" href="#">Real Estate & Contracting </a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="news.html">News & Events</a>
@@ -76,6 +93,7 @@
                 </li>
               </ul>
             </div>
+
           </div>
         </div>
       </nav>
@@ -90,10 +108,12 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="main-title">
-                    <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                        Media<br>
+                    <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s"
+                      data-wow-delay="0.3s"
+                      style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                      Media<br>
                       <span class="text-primary">News & Events</span>
-                  </h1>
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -108,96 +128,99 @@
 
       <div class="blog-area pt-120 pb-90">
         <div class="container">
-           <div class="row">
-              <div class="col-xl-4 col-md-6 col-sm-6">
-                 <div class="tpblog  pb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1.5s; animation-delay: 300ms; animation-name: fadeInUp;">
-                    <div class="tpblog__thumb fix">
-                       <div class="tpblog__arrow-box">
-                          <span>
-                             <a href="#"> <i class="fa-solid fa-arrow-right-long"></i></a>
-                          </span>
-                       </div>
-                       <a href="#"><img src="img/blog/blog-1.jpg" alt=""></a>
-                    </div>
-                    <div class="tpblog__content fix p-relative">
-                       <div class="tpblog__meta mb-15">
-                          <span class="date pr-25"><i class="fal fa-calendar"></i> Nov 4,
-                             2022</span>
-                       </div>
-                       <h3 class="tp-blog-title mb-25"><a href="#">Algosaibi Services gets certified by TUV NORD</a>
-                       </h3>
-                       <div class="tp-feed-link d-flex align-items-center">
-                          <a class="btn-link-sm" href="#">Read More</a>
-                       </div>
-                    </div>
-                 </div>
+          <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-6">
+              <div class="tpblog  pb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms"
+                style="visibility: visible; animation-duration: 1.5s; animation-delay: 300ms; animation-name: fadeInUp;">
+                <div class="tpblog__thumb fix">
+                  <div class="tpblog__arrow-box">
+                    <span>
+                      <a href="#"> <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </span>
+                  </div>
+                  <a href="#"><img src="img/blog/blog-1.jpg" alt=""></a>
+                </div>
+                <div class="tpblog__content fix p-relative">
+                  <div class="tpblog__meta mb-15">
+                    <span class="date pr-25"><i class="fal fa-calendar"></i> Nov 4,
+                      2022</span>
+                  </div>
+                  <h3 class="tp-blog-title mb-25"><a href="#">Algosaibi Services gets certified by TUV NORD</a>
+                  </h3>
+                  <div class="tp-feed-link d-flex align-items-center">
+                    <a class="btn-link-sm" href="#">Read More</a>
+                  </div>
+                </div>
               </div>
-              <div class="col-xl-4 col-md-6 col-sm-6">
-                 <div class="tpblog pb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="600ms" style="visibility: visible; animation-duration: 1.5s; animation-delay: 600ms; animation-name: fadeInUp;">
-                    <div class="tpblog__thumb fix">
-                       <div class="tpblog__arrow-box">
-                          <span>
-                             <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
-                          </span>
-                       </div>
-                       <a href="#"><img src="img/blog/blog-1.jpg" alt=""></a>
-                    </div>
-                    <div class="tpblog__content fix p-relative">
-                       <div class="tpblog__meta mb-15">
-                          <span class="date pr-25"><i class="fal fa-calendar"></i> Nov 4,
-                             2022</span>
-                       </div>
-                       <h3 class="tp-blog-title mb-25"><a href="#">
-                             A new division of Khalifa Algosaibi Investment
-                          </a></h3>
-                       <div class="tp-feed-link d-flex align-items-center">
-                          <a class="btn-link-sm" href="#">Read More</a>
-                       </div>
-                    </div>
-                 </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6">
+              <div class="tpblog pb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="600ms"
+                style="visibility: visible; animation-duration: 1.5s; animation-delay: 600ms; animation-name: fadeInUp;">
+                <div class="tpblog__thumb fix">
+                  <div class="tpblog__arrow-box">
+                    <span>
+                      <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </span>
+                  </div>
+                  <a href="#"><img src="img/blog/blog-1.jpg" alt=""></a>
+                </div>
+                <div class="tpblog__content fix p-relative">
+                  <div class="tpblog__meta mb-15">
+                    <span class="date pr-25"><i class="fal fa-calendar"></i> Nov 4,
+                      2022</span>
+                  </div>
+                  <h3 class="tp-blog-title mb-25"><a href="#">
+                      A new division of Khalifa Algosaibi Investment
+                    </a></h3>
+                  <div class="tp-feed-link d-flex align-items-center">
+                    <a class="btn-link-sm" href="#">Read More</a>
+                  </div>
+                </div>
               </div>
-              <div class="col-xl-4 col-md-6 col-sm-6">
-                 <div class="tpblog pb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="900ms" style="visibility: visible; animation-duration: 1.5s; animation-delay: 900ms; animation-name: fadeInUp;">
-                    <div class="tpblog__thumb fix">
-                       <div class="tpblog__arrow-box">
-                          <span>
-                             <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
-                          </span>
-                       </div>
-                       <a href="#"><img src="img/blog/blog-1.jpg" alt=""></a>
-                    </div>
-                    <div class="tpblog__content fix p-relative">
-                       <div class="tpblog__meta mb-15">
-                          <span class="date pr-25"><i class="fal fa-calendar"></i> Nov 4,
-                             2022</span>
-                       </div>
-                       <h3 class="tp-blog-title mb-25"><a href="#">
-                             A message from Khalifa Algosaibi Investment
-                          </a></h3>
-                       <div class="tp-feed-link d-flex align-items-center">
-                          <a class="btn-link-sm" href="#">Read More</a>
-                       </div>
-                    </div>
-                 </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6">
+              <div class="tpblog pb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="900ms"
+                style="visibility: visible; animation-duration: 1.5s; animation-delay: 900ms; animation-name: fadeInUp;">
+                <div class="tpblog__thumb fix">
+                  <div class="tpblog__arrow-box">
+                    <span>
+                      <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </span>
+                  </div>
+                  <a href="#"><img src="img/blog/blog-1.jpg" alt=""></a>
+                </div>
+                <div class="tpblog__content fix p-relative">
+                  <div class="tpblog__meta mb-15">
+                    <span class="date pr-25"><i class="fal fa-calendar"></i> Nov 4,
+                      2022</span>
+                  </div>
+                  <h3 class="tp-blog-title mb-25"><a href="#">
+                      A message from Khalifa Algosaibi Investment
+                    </a></h3>
+                  <div class="tp-feed-link d-flex align-items-center">
+                    <a class="btn-link-sm" href="#">Read More</a>
+                  </div>
+                </div>
               </div>
-           </div>
+            </div>
+          </div>
         </div>
-     </div>
-        
+      </div>
 
 
 
 
-     
+
+
       <div class="container-fluid">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none w-25">
-               <img src="images/logo.png" alt="" class="w-75">
+              <img src="images/logo.png" alt="" class="w-75">
             </a>
             <span class="text-muted">© 2024 Company, Inc</span>
           </div>
-      
+
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-muted" href="index.html">Home</a></li>
             <li class="ms-3"><a class="text-muted" href="news.html">News & Events</a></li>
@@ -234,7 +257,7 @@
       const updateCounter = () => {
         const target = Number(counter.getAttribute("data-target"));
         const c = Number(counter.innerText);
-        const increment = target / 10000; 
+        const increment = target / 10000;
 
         if (c < target) {
           counter.innerText = `${Math.ceil(c + increment)}`;
@@ -254,4 +277,5 @@
     });
   </script>
 </body>
+
 </html>

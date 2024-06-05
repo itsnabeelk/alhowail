@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/news.css">
-    <!---fonts -->
-    <link rel="stylesheet" href="font/stylesheet.css">
-    <!-- css-close -->
+  <!---fonts -->
+  <link rel="stylesheet" href="font/stylesheet.css">
+  <!-- css-close -->
   <style>
     body {
       overflow: auto;
@@ -28,11 +28,13 @@
 <body class="theme-yellow homepage dark-horizontal">
   <div class="animsition" style="animation-duration: 1500ms; opacity: 1;">
     <div class="wrapper parallax-start">
+
+
       <!-- header-start -->
       <nav class="navbar navbar-light fixed-top bg--transparent">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.svg" alt="" width="60%">
+            <img src="images/logo.svg" alt="" width="60%">
           </a>
           <div class="humb-menu">
             <a href="" class="text-white">EN</a>
@@ -46,24 +48,40 @@
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 <a class="navbar-brand" href="index.html">
-                          <img src="images/logo.svg" alt="" width="40%">
+                  <img src="images/logo.svg" alt="" width="40%">
                 </a>
               </h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
+
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="about.html">
-                    Who We Are
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown2" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Who We Are <i class="fas fa-plus"></i>
                   </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown2">
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="about.html">Founder Message</a></li>
+                    <li><a class="dropdown-item" href="about.html">Vice President Message</a></li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="sectors.html">Sectors</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Sectors <i class="fas fa-plus"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown">
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="#">Trading</a></li>
+                    <li><a class="dropdown-item" href="#">Manufacturing </a></li>
+                    <li><a class="dropdown-item" href="#">Real Estate & Contracting </a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="news.html">News & Events</a>
@@ -76,10 +94,12 @@
                 </li>
               </ul>
             </div>
+
           </div>
         </div>
       </nav>
       <!-- header-close -->
+
 
       <!-- banner -->
       <div class="section-item text-left">
@@ -90,10 +110,12 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="main-title">
-                    <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                        Lorem Ipsum<br>
+                    <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s"
+                      data-wow-delay="0.3s"
+                      style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                      Lorem Ipsum<br>
                       <span class="text-primary">Our Sectors</span>
-                  </h1>
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -104,58 +126,58 @@
       </div>
       <!-- close -->
 
-   <div class="blog__two section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-3 col-lg-6 my-5">
-					<div class="blog__two-item page">
-						<div class="blog__two-item-image">
-							<a href="single-right-sidebar.html"><img src="images/services/1.jpg" alt=""></a>
-						</div>
-						<div class="blog__two-item-content">
-							<h4><a href="single-right-sidebar.html">Services</a></h4>
-							<a class="btn-six" href="services.html">Know More<i class="far fa-chevron-double-right"></i></a>
-						</div>
-					</div>
-				</div>
-        <div class="col-xl-3 col-lg-6 my-5">
-					<div class="blog__two-item page">
-						<div class="blog__two-item-image">
-							<a href="services.html"><img src="images/services/2.jpg" alt=""></a>
-						</div>
-						<div class="blog__two-item-content">
-							<h4><a href="services.html">Trading</a></h4>
-							<a class="btn-six" href="services.html">Know More<i class="far fa-chevron-double-right"></i></a>
-						</div>
-					</div>
-				</div>
-        <div class="col-xl-3 col-lg-6 my-5">
-					<div class="blog__two-item page">
-						<div class="blog__two-item-image">
-							<a href="services.html"><img src="images/services/3.jpg" alt=""></a>
-						</div>
-						<div class="blog__two-item-content">
-							<h4><a href="services.html">Manufacturing</a></h4>
-							<a class="btn-six" href="services.html">Know More<i class="far fa-chevron-double-right"></i></a>
-						</div>
-					</div>
-				</div>
-        <div class="col-xl-3 col-lg-6 my-5">
-					<div class="blog__two-item page">
-						<div class="blog__two-item-image">
-							<a href="services.html"><img src="images/services/4.jpg" alt=""></a>
-						</div>
-						<div class="blog__two-item-content">
-							<h4><a href="services.html">Real Estate & Contracting </a></h4>
-							<a class="btn-six" href="services.html">Know More<i class="far fa-chevron-double-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+      <div class="blog__two section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 my-5">
+              <div class="blog__two-item page">
+                <div class="blog__two-item-image">
+                  <a href="single-right-sidebar.html"><img src="images/services/1.jpg" alt=""></a>
+                </div>
+                <div class="blog__two-item-content">
+                  <h4><a href="single-right-sidebar.html">Services</a></h4>
+                  <a class="btn-six" href="services.html">Know More<i class="far fa-chevron-double-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 my-5">
+              <div class="blog__two-item page">
+                <div class="blog__two-item-image">
+                  <a href="services.html"><img src="images/services/2.jpg" alt=""></a>
+                </div>
+                <div class="blog__two-item-content">
+                  <h4><a href="services.html">Trading</a></h4>
+                  <a class="btn-six" href="services.html">Know More<i class="far fa-chevron-double-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 my-5">
+              <div class="blog__two-item page">
+                <div class="blog__two-item-image">
+                  <a href="services.html"><img src="images/services/3.jpg" alt=""></a>
+                </div>
+                <div class="blog__two-item-content">
+                  <h4><a href="services.html">Manufacturing</a></h4>
+                  <a class="btn-six" href="services.html">Know More<i class="far fa-chevron-double-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 my-5">
+              <div class="blog__two-item page">
+                <div class="blog__two-item-image">
+                  <a href="services.html"><img src="images/services/4.jpg" alt=""></a>
+                </div>
+                <div class="blog__two-item-content">
+                  <h4><a href="services.html">Real Estate & Contracting </a></h4>
+                  <a class="btn-six" href="services.html">Know More<i class="far fa-chevron-double-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-     
+
 
 
 
@@ -164,11 +186,11 @@
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none w-25">
-               <img src="images/logo.png" alt="" class="w-75">
+              <img src="images/logo.png" alt="" class="w-75">
             </a>
             <span class="text-muted">© 2024 Company, Inc</span>
           </div>
-      
+
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-muted" href="index.html">Home</a></li>
             <li class="ms-3"><a class="text-muted" href="news.html">News & Events</a></li>
@@ -205,7 +227,7 @@
       const updateCounter = () => {
         const target = Number(counter.getAttribute("data-target"));
         const c = Number(counter.innerText);
-        const increment = target / 10000; 
+        const increment = target / 10000;
 
         if (c < target) {
           counter.innerText = `${Math.ceil(c + increment)}`;
@@ -225,4 +247,5 @@
     });
   </script>
 </body>
+
 </html>

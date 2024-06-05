@@ -1,3 +1,36 @@
+// dropdown-script
+
+document.addEventListener("DOMContentLoaded", function() {
+  var dropdownToggles = document.querySelectorAll(".drop-menu");
+
+  dropdownToggles.forEach(function(dropdownToggle) {
+    var dropdownMenu = dropdownToggle.nextElementSibling;
+    var isOpen = false;
+
+    dropdownToggle.addEventListener("click", function() {
+      isOpen = !isOpen;
+
+      if (isOpen) {
+        dropdownMenu.style.maxHeight = "0";
+        dropdownMenu.style.display = "block";
+        var height = dropdownMenu.scrollHeight;
+        dropdownMenu.style.maxHeight = height + "px";
+        dropdownToggle.querySelector("i").classList.replace("fa-plus", "fa-minus");
+      } else {
+        dropdownMenu.style.maxHeight = "0";
+        setTimeout(function() {
+          dropdownMenu.style.display = "none";
+          dropdownToggle.querySelector("i").classList.replace("fa-minus", "fa-plus");
+        }, 300);
+      }
+    });
+  });
+})
+// close
+
+
+
+
 $.js = function (el) {
     return $('[data-js=' + el + ']')
 };
@@ -160,3 +193,4 @@ bannerVideo.addEventListener('click', function() {
     bannerVideo.pause();
   }
 });
+

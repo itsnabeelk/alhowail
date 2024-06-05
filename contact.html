@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +15,9 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/news.css">
-    <!---fonts -->
-    <link rel="stylesheet" href="font/stylesheet.css">
-    <!-- css-close -->
+  <!---fonts -->
+  <link rel="stylesheet" href="font/stylesheet.css">
+  <!-- css-close -->
   <style>
     body {
       overflow: auto;
@@ -28,11 +29,13 @@
 <body class="theme-yellow homepage dark-horizontal">
   <div class="animsition" style="animation-duration: 1500ms; opacity: 1;">
     <div class="wrapper parallax-start">
+
+
       <!-- header-start -->
       <nav class="navbar navbar-light fixed-top bg--transparent">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.svg" alt="" width="60%">
+            <img src="images/logo.svg" alt="" width="60%">
           </a>
           <div class="humb-menu">
             <a href="" class="text-white">EN</a>
@@ -46,24 +49,40 @@
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 <a class="navbar-brand" href="index.html">
-                          <img src="images/logo.svg" alt="" width="40%">
+                  <img src="images/logo.svg" alt="" width="40%">
                 </a>
               </h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
+
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="about.html">
-                    Who We Are
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown2" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Who We Are <i class="fas fa-plus"></i>
                   </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown2">
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="about.html">Founder Message</a></li>
+                    <li><a class="dropdown-item" href="about.html">Vice President Message</a></li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="sectors.html">Sectors</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active drop-menu" href="#" id="sectorsDropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Sectors <i class="fas fa-plus"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="sectorsDropdown">
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="#">Trading</a></li>
+                    <li><a class="dropdown-item" href="#">Manufacturing </a></li>
+                    <li><a class="dropdown-item" href="#">Real Estate & Contracting </a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="news.html">News & Events</a>
@@ -76,6 +95,7 @@
                 </li>
               </ul>
             </div>
+
           </div>
         </div>
       </nav>
@@ -90,10 +110,12 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="main-title">
-                    <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                        Get in touch<br>
+                    <h1 class="slide-title font-barmeno wow fadeInLeft" data-wow-offset="250" data-wow-duration="0.8s"
+                      data-wow-delay="0.3s"
+                      style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                      Get in touch<br>
                       <span class="text-primary">Contact Us</span>
-                  </h1>
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -108,103 +130,107 @@
 
       <div class="contact__three pb-0 section-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-md-6 lg-mb-30">
-                    <div class="contact__three-info">
-                        <div class="contact__three-info-icon">
-                            <img src="img/icon/call.png" alt="">
-                        </div>
-                        <div class="contact__three-info-content">
-                            <h4>Tell With US</h4>
-                            <p><a href="tel:+966 000 00 00">+966 000 00 00 </a></p>
-                            <p><a href="tel:+966 000 00 00">+966 000 00 00 </a></p>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-xl-4 col-md-6 lg-mb-30">
+              <div class="contact__three-info">
+                <div class="contact__three-info-icon">
+                  <img src="img/icon/call.png" alt="">
                 </div>
-                <div class="col-xl-4 col-md-6 md-mb-30">
-                    <div class="contact__three-info">
-                        <div class="contact__three-info-icon">
-                            <img src="img/icon/email.png" alt="">
-                        </div>
-                        <div class="contact__three-info-content">
-                            <h4>Quick Email</h4>
-                            <p><a href="mailto:info@alhowail.com">info@alhowail.com</a></p>
-                            <p><a href="mailto:info@alhowail.com">info@alhowail.com</a></p>
-                        </div>
-                    </div>
+                <div class="contact__three-info-content">
+                  <h4>Tell With US</h4>
+                  <p><a href="tel:+966 000 00 00">+966 000 00 00 </a></p>
+                  <p><a href="tel:+966 000 00 00">+966 000 00 00 </a></p>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="contact__three-info">
-                        <div class="contact__three-info-icon">
-                            <img src="img/icon/locations.png" alt="">
-                        </div>
-                        <div class="contact__three-info-content">
-                            <h4>Office Location</h4>
-                            <p>Khobar Shamaliya,<br>Saudi Arabia</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-xl-4 col-md-6 md-mb-30">
+              <div class="contact__three-info">
+                <div class="contact__three-info-icon">
+                  <img src="img/icon/email.png" alt="">
+                </div>
+                <div class="contact__three-info-content">
+                  <h4>Quick Email</h4>
+                  <p><a href="mailto:info@alhowail.com">info@alhowail.com</a></p>
+                  <p><a href="mailto:info@alhowail.com">info@alhowail.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="contact__three-info">
+                <div class="contact__three-info-icon">
+                  <img src="img/icon/locations.png" alt="">
+                </div>
+                <div class="contact__three-info-content">
+                  <h4>Office Location</h4>
+                  <p>Khobar Shamaliya,<br>Saudi Arabia</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
 
-    <div class="contact__three section-padding">
+      <div class="contact__three section-padding">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 lg-mb-30">
-                    <div class="contact__three-left mr-40 xl-mr-0">
-                        <div class="contact__three-left-map">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3571.802059125952!2d50.089960375424035!3d26.462108676918653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDI3JzQzLjYiTiA1MMKwMDUnMzMuMSJF!5e0!3m2!1sen!2sbh!4v1711541935325!5m2!1sen!2sbh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 lg-mb-30">
+              <div class="contact__three-left mr-40 xl-mr-0">
+                <div class="contact__three-left-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3571.802059125952!2d50.089960375424035!3d26.462108676918653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDI3JzQzLjYiTiA1MMKwMDUnMzMuMSJF!5e0!3m2!1sen!2sbh!4v1711541935325!5m2!1sen!2sbh"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="contact__three-righ">
-                        <div class="contact__three-right-title">
-                            <span class="subtitle-one">Request a call Back</span>
-                            <h2 class="mb-30">Contact Us</h2>
-                        </div>
-                        <div class="contact__three-right-form">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-md-6 mb-30">
-                                        <div class="contact__two-right-form-item conbix-contact-item">
-											<span class="fal fa-user"></span>
-                                            <input type="text" name="name" placeholder="Full Name" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 md-mb-30">
-                                        <div class="contact__two-right-form-item conbix-contact-item">
-											<span class="far fa-envelope-open"></span>
-                                            <input type="email" name="email" placeholder="Email Address" required="required">											
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 mb-30">
-                                        <div class="contact__two-right-form-item conbix-contact-item">
-											<span class="fal fa-book"></span>
-                                            <input type="text" name="subject" placeholder="Subject">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 mb-30">
-                                        <div class="contact__two-right-form-item conbix-contact-item">
-											<span class="far fa-comments"></span>
-                                            <textarea name="message" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="contact__two-right-form-item">
-                                            <button class="btn-one" type="submit">Submit Message <i class="far fa-chevron-double-right"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="contact__three-righ">
+                <div class="contact__three-right-title">
+                  <span class="subtitle-one">Request a call Back</span>
+                  <h2 class="mb-30">Contact Us</h2>
+                </div>
+                <div class="contact__three-right-form">
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-md-6 mb-30">
+                        <div class="contact__two-right-form-item conbix-contact-item">
+                          <span class="fal fa-user"></span>
+                          <input type="text" name="name" placeholder="Full Name" required="required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 md-mb-30">
+                        <div class="contact__two-right-form-item conbix-contact-item">
+                          <span class="far fa-envelope-open"></span>
+                          <input type="email" name="email" placeholder="Email Address" required="required">
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-30">
+                        <div class="contact__two-right-form-item conbix-contact-item">
+                          <span class="fal fa-book"></span>
+                          <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-30">
+                        <div class="contact__two-right-form-item conbix-contact-item">
+                          <span class="far fa-comments"></span>
+                          <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="contact__two-right-form-item">
+                          <button class="btn-one" type="submit">Submit Message <i
+                              class="far fa-chevron-double-right"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
 
 
@@ -213,11 +239,11 @@
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none w-25">
-               <img src="images/logo.png" alt="" class="w-75">
+              <img src="images/logo.png" alt="" class="w-75">
             </a>
             <span class="text-muted">© 2024 Company, Inc</span>
           </div>
-      
+
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-muted" href="index.html">Home</a></li>
             <li class="ms-3"><a class="text-muted" href="news.html">News & Events</a></li>
@@ -231,47 +257,48 @@
   </div>
 
 
-    <!-- js-start -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.pagepiling.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/lottie-player.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('.carousel').carousel({
-          interval: 5000,
-          pause: 'hover'
-        });
+  <!-- js-start -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.pagepiling.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lottie-player.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 5000,
+        pause: 'hover'
       });
-    </script>
-    <script>
-      const counters = document.querySelectorAll(".counter");
-      counters.forEach((counter) => {
-        counter.innerText = "0";
-        const updateCounter = () => {
-          const target = Number(counter.getAttribute("data-target"));
-          const c = Number(counter.innerText);
-          const increment = target / 10000; 
-  
-          if (c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`;
-            setTimeout(updateCounter, 100);
-          } else {
-            counter.innerText = target;
-          }
-        };
-        updateCounter();
-      });
-    </script>
-    <script>
-      var counter = $('.counter2');
-      counter.counterUp({
-        time: 2500,
-        delay: 100
-      });
-    </script>
-  </body>
-  </html>
+    });
+  </script>
+  <script>
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach((counter) => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = Number(counter.getAttribute("data-target"));
+        const c = Number(counter.innerText);
+        const increment = target / 10000;
+
+        if (c < target) {
+          counter.innerText = `${Math.ceil(c + increment)}`;
+          setTimeout(updateCounter, 100);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  </script>
+  <script>
+    var counter = $('.counter2');
+    counter.counterUp({
+      time: 2500,
+      delay: 100
+    });
+  </script>
+</body>
+
+</html>
