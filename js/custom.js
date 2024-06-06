@@ -29,6 +29,24 @@ document.addEventListener("DOMContentLoaded", function() {
 // close
 
 
+// timeline
+  var timelineBlocks = document.querySelectorAll('.timeline-block-right, .timeline-block-left');
+
+var observer = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+timelineBlocks.forEach(function (block) {
+  observer.observe(block);
+});
+// timeline
+
 
 
 // scroller
