@@ -9500,6 +9500,8 @@ Blog Two CSS
   position: relative;
   z-index: 1;
   overflow: hidden;
+  height: 200px;
+  object-fit: fill;
 }
 .blog__two-item-image::before {
   position: absolute;
