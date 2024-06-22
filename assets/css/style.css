@@ -1328,10 +1328,10 @@ p {
   margin: -15px 0 20px;
   font-weight: 700;
 }
-.slide-container {
+/* .slide-container {
   padding-right: 25px;
   padding-left: 25px;
-}
+} */
 }
 
 @media (max-width:680px) {
@@ -1582,14 +1582,17 @@ display:none;
   margin: 0;
   font-weight: 700;
   color: #000;
-  line-height: normal;
 }
 .chairman-message .content-container p {
   font-size: 16px;
   margin: 25px 0;
   font-weight: 500;
   color: #000;
-  line-height: normal;
+}
+@media (max-width: 680px) {
+  .chairman-message .content-container p {
+    font-size: 12px;
+  }
 }
 .chairman-message .image-container {
   position: relative;
