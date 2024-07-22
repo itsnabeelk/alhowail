@@ -2859,7 +2859,6 @@ a.btn-play i {
 }
 
 .horizontal-service-item {
-    /*border: #e1e1e1 1px solid;*/
     padding: 3.88888889vmin 3.125rem 5.09259259vmin;
     position: relative;
     margin-top: 0;
@@ -2867,6 +2866,8 @@ a.btn-play i {
     flex-direction: column;
     background-repeat: no-repeat;
     background-color: #f3fbfe;
+    min-height: 500px;
+    justify-content: center;
 }
 
 .horizontal-service-item2 {
@@ -9707,8 +9708,8 @@ a.phone-link {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    min-height: 500px;
 }
-
 .strategycontent {
     position: relative;
 }
@@ -11184,6 +11185,7 @@ ul.relatednews li:nth-child(2) {
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    min-height: 500px;
 }
 
 .values a .image-wrap img {
@@ -11237,10 +11239,10 @@ ul.relatednews li:nth-child(2) {
     background: rgba(15, 45, 82, 1);
     background: -moz-linear-gradient(45deg, rgba(15, 45, 82, 1) 0%, rgba(15, 45, 82, 0.82) 36%, rgba(255, 183, 27, 0.5) 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(15, 45, 82, 1)), color-stop(36%, rgba(15, 45, 82, 0.82)), color-stop(100%, rgba(255, 183, 27, 0.5)));
-    background: -webkit-linear-gradient(45deg, rgba(15, 45, 82, 1) 0%, rgba(15, 45, 82, 0.82) 36%, rgba(255, 183, 27, 0.5) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(15, 45, 82, 1) 0%, rgb(15 45 82 / 26%) 36%, rgba(255, 183, 27, 0.5) 100%);
     background: -o-linear-gradient(45deg, rgba(15, 45, 82, 1) 0%, rgba(15, 45, 82, 0.82) 36%, rgba(255, 183, 27, 0.5) 100%);
     background: -ms-linear-gradient(45deg, rgba(15, 45, 82, 1) 0%, rgba(15, 45, 82, 0.82) 36%, rgba(255, 183, 27, 0.5) 100%);
-    background: linear-gradient(45deg, rgba(15, 45, 82, 1) 0%, rgba(15, 45, 82, 0.82) 36%, rgba(255, 183, 27, 0.5) 100%);
+    background: linear-gradient(45deg, rgb(37 37 151) 0%, rgb(2 2 252 / 11%) 36%, #ffb71bdb 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f2d52', endColorstr='#ffb71b', GradientType=1);
     opacity: 1;
     cursor: pointer;
@@ -11975,4 +11977,7 @@ ul.relatednews li:nth-child(2) {
 }
 .article-promo-item2 {
     min-height: 60vh;
+}
+.horizontal-service-item ul li {
+    font-size: 14px;
 }
